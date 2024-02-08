@@ -17,9 +17,10 @@ body {
     display: flex;
     flex-direction: column;
     //flex : grow shrink base
-    flex: 0 1 900px;
+    flex: 0 1 var(--largeur-minimum);
     border: 2px rgb(255, 255, 255) solid;
     border-radius: 15px;
+    transform: skew(-10deg);
     background-color: rgba(255, 255, 255, 0.35);
 }
 

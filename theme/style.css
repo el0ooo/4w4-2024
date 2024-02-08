@@ -27,6 +27,8 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
   --couleur-arriere-galerie: #3d3d3d;
   --couleur-arriere-evenement:#3d3d3d;
   --couleur-arriere-footer: #00ccff;
+  --largeur-minimum: 900px;
+  --padding: 1vw;
 }
 
 /* ----------------------------------------------------- */
@@ -47,18 +49,34 @@ h2 {
 
 h3 {
   font-size: clamp(0.667rem, -1.625rem + 11vw, 2.5rem);
+  padding: var(--padding);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 h4 {
   font-size: clamp(0.667rem, -1.104rem + 8.5vw, 2.083rem);
+  padding: var(--padding);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 h5 {
   font-size: clamp(0.667rem, -0.583rem + 6vw, 1.667rem);
+  padding: var(--padding);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 h6 {
   font-size: clamp(0.667rem, -0.063rem + 3.5vw, 1.25rem);
+  padding: var(--padding);
+  color: rgba(0, 0, 0, 0.4);
+}
+
+p {
+  font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+}
+
+hr {
+  font-size: clamp(0.5rem, -0.125rem + 2vw, 1rem);
 }
 
 /* ----------------------------------------------------- */
@@ -82,9 +100,10 @@ body {
 .global > footer {
   display: flex;
   flex-direction: column;
-  flex: 0 1 900px;
+  flex: 0 1 var(--largeur-minimum);
   border: 2px rgb(255, 255, 255) solid;
   border-radius: 15px;
+  transform: skew(-10deg);
   background-color: rgba(255, 255, 255, 0.35);
 }
 

@@ -13,21 +13,33 @@ h2 {
 
 h3 {
     font-size: clamp(0.667rem, -1.625rem + 11vw, 2.5rem);
+    padding: var(--padding);
+    color: rgba($color: #000000, $alpha: 0.8);
 }
 
 h4 {
     font-size: clamp(0.667rem, -1.104rem + 8.5vw, 2.083rem);
+    padding: var(--padding);
+    color: rgba($color: #000000, $alpha: 0.6);
 }
 
 h5 {
     font-size: clamp(0.667rem, -0.583rem + 6vw, 1.667rem);
+    padding: var(--padding);
+    color: rgba($color: #000000, $alpha: 0.4);
 }
 
 h6 {
     font-size: clamp(0.667rem, -0.063rem + 3.5vw, 1.25rem);
+    padding: var(--padding);
+    color: rgba($color: #000000, $alpha: 0.4);
 }
 
-p {}
+p {
+    font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+}
 
-hr {}
+hr {
+    font-size: clamp(0.5rem, -0.125rem + 2vw, 1rem);
+}
 
