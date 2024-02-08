@@ -9,5 +9,7 @@
 À réaliser :
 - complèter chaqu'une des règles de style des éléments H
 - Changer les couleurs des backgrounds et des H
+- Améliorer le design général sans etre trop spécifique
+- Ajouter 2 variables.
 - Créer plusieurs commits
 - Créer une gitHub page
