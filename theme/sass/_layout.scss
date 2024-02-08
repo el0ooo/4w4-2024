@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.global {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.global>section,
+.global>header,
+.global>footer {
+    width: 1100px;
+    border: 2px red solid;
+}
+
+#entete, 
+#accueil,
+#galerie, 
+#evenement, 
+#footer {
+background-color: var(--couleur-arriere-footer);
+}
