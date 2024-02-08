@@ -15,13 +15,18 @@ Text Domain: Theme-gr2
 Ce theme a ete developpe dans le cadre du cours 4w4.
 */
 /* ----------------------------------------------------- */
+/*Police d'ecriture*/
+/* ----------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+/* ----------------------------------------------------- */
 /*Variables CSS*/
 /* ----------------------------------------------------- */
 :root {
-  --couleur-arriere-entete: #ffbf00;
-  --couleur-arriete-acceuil: #989898;
-  --couleur-arriere-evenement:#606060;
-  --couleur-arriere-footer: #ff8800;
+  --couleur-arriere-entete: #ffea00;
+  --couleur-arriete-acceuil: #3d3d3d;
+  --couleur-arriere-galerie: #3d3d3d;
+  --couleur-arriere-evenement:#3d3d3d;
+  --couleur-arriere-footer: #00ccff;
 }
 
 /* ----------------------------------------------------- */
@@ -31,7 +36,29 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
 Selecteurs textuels de base
 */
 h1 {
-  font-size: clamp(1rem, -0.5rem + 6.2vw, 3.75rem);
+  font-size: clamp(1rem, -1.917rem + 14vw, 3.333rem);
+  color: rgba(255, 111, 0, 0.7);
+}
+
+h2 {
+  font-size: clamp(0.667rem, -2.146rem + 13.5vw, 2.917rem);
+  color: rgba(17, 0, 255, 0.6);
+}
+
+h3 {
+  font-size: clamp(0.667rem, -1.625rem + 11vw, 2.5rem);
+}
+
+h4 {
+  font-size: clamp(0.667rem, -1.104rem + 8.5vw, 2.083rem);
+}
+
+h5 {
+  font-size: clamp(0.667rem, -0.583rem + 6vw, 1.667rem);
+}
+
+h6 {
+  font-size: clamp(0.667rem, -0.063rem + 3.5vw, 1.25rem);
 }
 
 /* ----------------------------------------------------- */
@@ -40,25 +67,45 @@ h1 {
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Bungee", sans-serif;
 }
 
 .global {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  min-height: 30vh;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  width: 1100px;
-  border: 2px red solid;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 900px;
+  border: 2px rgb(255, 255, 255) solid;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.35);
 }
 
-#entete,
-#accueil,
-#galerie,
-#evenement,
+#entete {
+  background-color: var(--couleur-arriere-entete);
+}
+
+#accueil {
+  background-color: var(--couleur-arriete-acceuil);
+}
+
+#galerie {
+  background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-paragraphe);
+}
+
+#evenement {
+  background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-paragraphe);
+}
+
 #footer {
   background-color: var(--couleur-arriere-footer);
 }/*# sourceMappingURL=style.css.map */

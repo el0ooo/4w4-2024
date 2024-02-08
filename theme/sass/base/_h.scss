@@ -2,13 +2,30 @@
 Selecteurs textuels de base
 */
 h1 {
-    font-size: clamp(1rem, -0.5rem + 6.2vw, 3.75rem);
+    font-size: clamp(1rem, -1.917rem + 14vw, 3.333rem);
+    color: rgba(#ff6f00, 0.7);
 }
-h2 {}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
+
+h2 {
+    font-size: clamp(0.667rem, -2.146rem + 13.5vw, 2.917rem);
+    color: rgba(#1100ff, 0.6);
+}
+
+h3 {
+    font-size: clamp(0.667rem, -1.625rem + 11vw, 2.5rem);
+}
+
+h4 {
+    font-size: clamp(0.667rem, -1.104rem + 8.5vw, 2.083rem);
+}
+
+h5 {
+    font-size: clamp(0.667rem, -0.583rem + 6vw, 1.667rem);
+}
+
+h6 {
+    font-size: clamp(0.667rem, -0.063rem + 3.5vw, 1.25rem);
+}
 
 p {}
 

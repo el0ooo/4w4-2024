@@ -1,25 +1,46 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Bungee', sans-serif;
 }
 
 .global {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    min-height: 30vh;
 }
 
 .global>section,
 .global>header,
 .global>footer {
-    width: 1100px;
-    border: 2px red solid;
+    display: flex;
+    flex-direction: column;
+    //flex : grow shrink base
+    flex: 0 1 900px;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.35);
 }
 
-#entete, 
-#accueil,
-#galerie, 
-#evenement, 
+#entete {
+    background-color: var(--couleur-arriere-entete);
+}
+
+#accueil {
+    background-color: var(--couleur-arriete-acceuil);
+}
+
+#galerie{
+    background-color: var(--couleur-arriere-galerie);
+    color: var(--couleur-paragraphe);
+}
+
+#evenement {
+    background-color: var(--couleur-arriere-evenement);
+    color: var(--couleur-paragraphe);
+}
+
 #footer {
-background-color: var(--couleur-arriere-footer);
+    background-color: var(--couleur-arriere-footer);
 }
