@@ -28,16 +28,30 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
   --couleur-arriere-galerie: #3d3d3d;
   --couleur-arriere-evenement:#3d3d3d;
   --couleur-arriere-footer: #00ccff;*/
-  --couleur-arriere-entete: hsl(50 100% 50%);
-  --couleur-arriere-acceuil: hsl(0 0% 24%);
-  --couleur-arriere-galerie: hsl(0 0% 50%);
-  --couleur-arriere-evenement: hsl(0 0% 24%);
-  --couleur-arriere-footer: hsl(180 100% 50%);
-  --couleur-entete: hsl(50 100% 20%);
-  --couleur-acceuil: hsl(0 0% 15%);
-  --couleur-galerie: hsl(0 0% 15%);
-  --couleur-evenement: hsl(0 0% 15%);
-  --couleur-footer: hsl(180 100% 15%);
+  --nb-elements: 5;
+  --incremant-angle: calc(360 / var(--nb-elements));
+  --angle-initial: 180;
+  --hu1: var(--angle-initial);
+  --hu2: calc(var(--hu1) + var(--incremant-angle));
+  --hu3: calc(var(--hu2) + var(--incremant-angle));
+  --hu4: calc(var(--hu3) + var(--incremant-angle));
+  --hu5: calc(var(--hu4) + var(--incremant-angle));
+  /*couleur d'arriere plan*/
+  --s-couleur-arriere: 80%;
+  --l-couleur-arriere: 77%;
+  /*couleur d'avant plan*/
+  --s-couleur: 61%;
+  --l-couleur: 36%;
+  --couleur-arriere-entete: hsl(var(--hu1) var(--s-couleur-arriere) var(--l-couleur-arriere));
+  --couleur-arriere-acceuil: hsl(var(--hu2) var(--s-couleur-arriere) var(--l-couleur-arriere));
+  --couleur-arriere-galerie: hsl(var(--hu3) var(--s-couleur-arriere) var(--l-couleur-arriere));
+  --couleur-arriere-evenement: hsl(var(--hu4) var(--s-couleur-arriere) var(--l-couleur-arriere));
+  --couleur-arriere-footer: hsl(var(--hu5) var(--s-couleur-arriere) var(--l-couleur-arriere));
+  --couleur-entete: hsl(var(--hu1) var(--s-couleur) var(--l-couleur));
+  --couleur-acceuil: hsl(var(--hu2) var(--s-couleur) var(--l-couleur));
+  --couleur-galerie: hsl(var(--hu3) var(--s-couleur) var(--l-couleur));
+  --couleur-evenement: hsl(var(--hu4) var(--s-couleur) var(--l-couleur));
+  --couleur-footer: hsl(var(--hu5) var(--s-couleur) var(--l-couleur));
   --largeur-minimum: 900px;
   --padding: 1vw;
 }
