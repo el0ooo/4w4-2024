@@ -23,11 +23,21 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
 /*Variables CSS*/
 /* ----------------------------------------------------- */
 :root {
-  --couleur-arriere-entete: #ffea00;
-  --couleur-arriete-acceuil: #3d3d3d;
+  /*--couleur-arriere-entete : #ffea00;
+  --couleur-arriere-acceuil: #3d3d3d;
   --couleur-arriere-galerie: #3d3d3d;
   --couleur-arriere-evenement:#3d3d3d;
-  --couleur-arriere-footer: #00ccff;
+  --couleur-arriere-footer: #00ccff;*/
+  --couleur-arriere-entete: hsl(50 100% 50%);
+  --couleur-arriere-acceuil: hsl(0 0% 24%);
+  --couleur-arriere-galerie: hsl(0 0% 50%);
+  --couleur-arriere-evenement: hsl(0 0% 24%);
+  --couleur-arriere-footer: hsl(180 100% 50%);
+  --couleur-entete: hsl(50 100% 20%);
+  --couleur-acceuil: hsl(0 0% 15%);
+  --couleur-galerie: hsl(0 0% 15%);
+  --couleur-evenement: hsl(0 0% 15%);
+  --couleur-footer: hsl(180 100% 15%);
   --largeur-minimum: 900px;
   --padding: 1vw;
 }
@@ -40,36 +50,30 @@ Selecteurs textuels de base
 */
 h1 {
   font-size: clamp(1rem, -1.917rem + 14vw, 3.333rem);
-  color: rgba(255, 111, 0, 0.7);
 }
 
 h2 {
   font-size: clamp(0.667rem, -2.146rem + 13.5vw, 2.917rem);
-  color: rgba(17, 0, 255, 0.6);
 }
 
 h3 {
   font-size: clamp(0.667rem, -1.625rem + 11vw, 2.5rem);
   padding: var(--padding);
-  color: rgba(0, 0, 0, 0.8);
 }
 
 h4 {
   font-size: clamp(0.667rem, -1.104rem + 8.5vw, 2.083rem);
   padding: var(--padding);
-  color: rgba(0, 0, 0, 0.6);
 }
 
 h5 {
   font-size: clamp(0.667rem, -0.583rem + 6vw, 1.667rem);
   padding: var(--padding);
-  color: rgba(0, 0, 0, 0.4);
 }
 
 h6 {
   font-size: clamp(0.667rem, -0.063rem + 3.5vw, 1.25rem);
   padding: var(--padding);
-  color: rgba(0, 0, 0, 0.4);
 }
 
 p {
@@ -111,22 +115,25 @@ body {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
 }
 
 #accueil {
-  background-color: var(--couleur-arriete-acceuil);
+  background-color: var(--couleur-arriere-acceuil);
+  color: var(--couleur-acceuil);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
-  color: var(--couleur-paragraphe);
+  color: var(--couleur-galerie);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
-  color: var(--couleur-paragraphe);
+  color: var(--couleur-evenement);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
 }/*# sourceMappingURL=style.css.map */

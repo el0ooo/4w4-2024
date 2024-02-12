@@ -26,22 +26,25 @@ body {
 
 #entete {
     background-color: var(--couleur-arriere-entete);
+    color: var(--couleur-entete);
 }
 
 #accueil {
-    background-color: var(--couleur-arriete-acceuil);
+    background-color: var(--couleur-arriere-acceuil);
+    color: var(--couleur-acceuil);
 }
 
 #galerie{
     background-color: var(--couleur-arriere-galerie);
-    color: var(--couleur-paragraphe);
+    color: var(--couleur-galerie);
 }
 
 #evenement {
     background-color: var(--couleur-arriere-evenement);
-    color: var(--couleur-paragraphe);
+    color: var(--couleur-evenement);
 }
 
 #footer {
     background-color: var(--couleur-arriere-footer);
+    color: var(--couleur-footer);
 }
