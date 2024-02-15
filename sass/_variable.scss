@@ -6,7 +6,7 @@
     --couleur-arriere-footer: #00ccff;*/
 --nb-elements: 2;
 --incremant-angle: calc(30 / var(--nb-elements));
---angle-initial: 3;
+--angle-initial: 180;
 --hu1: var(--angle-initial);
 --hu2: calc(var(--hu1) + var(--incremant-angle));
 --hu3: calc(var(--hu2) + var(--incremant-angle));

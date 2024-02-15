@@ -30,7 +30,7 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
   --couleur-arriere-footer: #00ccff;*/
   --nb-elements: 2;
   --incremant-angle: calc(30 / var(--nb-elements));
-  --angle-initial: 3;
+  --angle-initial: 180;
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--incremant-angle));
   --hu3: calc(var(--hu2) + var(--incremant-angle));
@@ -97,6 +97,30 @@ p {
 
 hr {
   font-size: clamp(0.5rem, -0.125rem + 2vw, 1rem);
+}
+
+a {
+  font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;
+  color: var(--couleur-footer);
+}
+
+.bouton {
+  width: 30%;
+  background-color: var(--couleur-arriere-entete);
+  transform: scale(1);
+  border: white 2px solid;
+  border-radius: 15px;
+  padding: var(--padding);
+  margin-left: 2vw;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.bouton:hover {
+  background-color: var(--couleur-arriere-galerie);
+  color: white;
+  transform: scale(1.1);
 }
 
 /* ----------------------------------------------------- */
