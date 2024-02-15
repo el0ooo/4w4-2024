@@ -28,9 +28,9 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
   --couleur-arriere-galerie: #3d3d3d;
   --couleur-arriere-evenement:#3d3d3d;
   --couleur-arriere-footer: #00ccff;*/
-  --nb-elements: 5;
-  --incremant-angle: calc(360 / var(--nb-elements));
-  --angle-initial: 180;
+  --nb-elements: 2;
+  --incremant-angle: calc(30 / var(--nb-elements));
+  --angle-initial: 3;
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--incremant-angle));
   --hu3: calc(var(--hu2) + var(--incremant-angle));
