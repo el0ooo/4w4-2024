@@ -12,26 +12,32 @@ h2 {
 h3 {
     font-size: clamp(0.667rem, -1.625rem + 11vw, 2.5rem);
     padding: var(--padding);
+    margin: 0;
 }
 
 h4 {
     font-size: clamp(0.667rem, -1.104rem + 8.5vw, 2.083rem);
     padding: var(--padding);
+    margin: 0;
 }
 
 h5 {
     font-size: clamp(0.667rem, -0.583rem + 6vw, 1.667rem);
     padding: var(--padding);
+    margin: 0;
 }
 
 h6 {
     font-size: clamp(0.667rem, -0.063rem + 3.5vw, 1.25rem);
     padding: var(--padding);
+    margin: 0;
 }
 
 p {
     font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
     font-family: 'Bebas Neue', sans-serif;
+    padding: var(--padding);
+    margin: 0;
 }
 
 hr {
@@ -43,22 +49,22 @@ a{
     font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
     font-family: 'Bebas Neue', sans-serif;
     text-decoration: none;
-    color: var(--couleur-footer);
+    color: white;
 }
 
 .bouton{
     width: 30%;
-    background-color: var(--couleur-arriere-entete);
+    background-color:var(--couleur-arriere-galerie);
     transform: scale(1);
-    border: white 2px solid;
+    border: 2px solid var(--couleur-footer);
     border-radius: 15px;
     padding: var(--padding);
     margin-left: 2vw;
     transition: background-color 0.2s, transform 0.2s;
 }
 
-.bouton:hover{
-    background-color: var(--couleur-arriere-galerie);
-    color: white;
+.bouton:hover {
+    background-color: var(--couleur-arriere-entete);
     transform: scale(1.1);
 }
+

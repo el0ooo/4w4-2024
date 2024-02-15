@@ -16,6 +16,7 @@
 - Ajouter plusieurs variables.
 - Créer plusieurs commits
 - Créer une gitHub page
+- Ajouter les éléments Buttons, lien a, blockquote
 
 
 ## lien vers ma page github : https://el0ooo.github.io/4w4-2024/
