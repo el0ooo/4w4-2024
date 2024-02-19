@@ -52,7 +52,7 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
   --couleur-galerie: hsl(var(--hu3) var(--s-couleur) var(--l-couleur));
   --couleur-evenement: hsl(var(--hu4) var(--s-couleur) var(--l-couleur));
   --couleur-footer: hsl(var(--hu5) var(--s-couleur) var(--l-couleur));
-  --largeur-minimum: 900px;
+  --largeur-minimum: 1100px;
   --padding: 1vw;
 }
 
@@ -64,6 +64,7 @@ Selecteurs textuels de base
 */
 h1 {
   font-size: clamp(1rem, -1.917rem + 14vw, 3.333rem);
+  text-shadow: var(--couleur-arriere-galerie) 0.5vw 0.5vw 0.5vw;
 }
 
 h2 {
@@ -110,22 +111,35 @@ a {
   font-family: "Bebas Neue", sans-serif;
   text-decoration: none;
   color: white;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--couleur-footer);
 }
 
 .bouton {
-  width: 30%;
-  background-color: var(--couleur-arriere-galerie);
-  transform: scale(1);
-  border: 2px solid var(--couleur-footer);
-  border-radius: 15px;
-  padding: var(--padding);
-  margin-left: 2vw;
-  transition: background-color 0.2s, transform 0.2s;
+  width: 250px;
+  height: 50px;
 }
 
-.bouton:hover {
-  background-color: var(--couleur-arriere-entete);
-  transform: scale(1.1);
+button {
+  font-size: clamp(0.667rem, -0.063rem + 3.5vw, 1.25rem);
+  width: 200px;
+  height: 50px;
+  padding: var(--padding);
+  margin-left: 30px;
+  border-radius: 15px;
+  border: 2px solid var(--couleur-footer);
+  transform: scale(1);
+  color: white;
+  background: linear-gradient(0deg, var(--couleur-arriere-entete), var(--couleur-arriere-entete));
+  transition: transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(0deg, var(--couleur-arriere-footer), var(--couleur-arriere-entete));
+  transform: scale(1.2);
 }
 
 /* ----------------------------------------------------- */
@@ -135,6 +149,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Bungee", sans-serif;
+  overflow-x: hidden;
 }
 
 .global {
@@ -153,6 +168,11 @@ body {
   flex: 0 1 var(--largeur-minimum);
   border-radius: 15px;
   transform: skew(-10deg);
+}
+
+.global > header {
+  flex: 0 1 1300px;
+  margin-bottom: 40px;
 }
 
 #entete {
@@ -199,6 +219,17 @@ blockquote footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.entete__header {
+  background-image: url("images/flocon.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  margin-left: 30px;
+}
+
+.entete__header span {
+  display: block;
 }
 
 /* ----------------------------------------------------- */

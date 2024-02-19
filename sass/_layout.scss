@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Bungee', sans-serif;
+    overflow-x: hidden;
 }
 
 .global {
@@ -21,6 +22,12 @@ body {
     flex: 0 1 var(--largeur-minimum);
     border-radius: 15px;
     transform: skew(-10deg);
+
+}
+
+.global>header {
+    flex: 0 1 1300px;
+    margin-bottom: 40px;
 }
 
 #entete {

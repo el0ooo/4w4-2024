@@ -3,6 +3,7 @@ Selecteurs textuels de base
 */
 h1 {
     font-size: clamp(1rem, -1.917rem + 14vw, 3.333rem);
+    text-shadow: var(--couleur-arriere-galerie) 0.5vw 0.5vw 0.5vw;
 }
 
 h2 {
@@ -50,21 +51,15 @@ a{
     font-family: 'Bebas Neue', sans-serif;
     text-decoration: none;
     color: white;
+    transition: color 0.2s;
+}
+
+a:hover{
+    color: var(--couleur-footer);
 }
 
 .bouton{
-    width: 30%;
-    background-color:var(--couleur-arriere-galerie);
-    transform: scale(1);
-    border: 2px solid var(--couleur-footer);
-    border-radius: 15px;
-    padding: var(--padding);
-    margin-left: 2vw;
-    transition: background-color 0.2s, transform 0.2s;
-}
-
-.bouton:hover {
-    background-color: var(--couleur-arriere-entete);
-    transform: scale(1.1);
+    width: 250px;
+    height: 50px;
 }
 
