@@ -8,3 +8,10 @@
 .entete__header span{
     display: block;
 }
+
+@media screen and (max-width: 800px){
+    .entete__header{
+        background-position: center;
+    }
+    
+}

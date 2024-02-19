@@ -75,3 +75,14 @@ blockquote footer{
     flex-direction: row;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 800px){
+    .evenement__section{
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+    .footer__section, .galerie__section, .accueil__section{
+        margin-left: 30px;
+    }
+}

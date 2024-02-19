@@ -10,15 +10,15 @@ button{
     color: white;
     background-image: linear-gradient(0deg, var(--couleur-arriere-entete), var(--couleur-arriere-entete));
     transition: background-image 0.2s, transform 0.2s, border 0.2s;
-}
-
-button:hover{
-    background-image: linear-gradient(0deg, var(--couleur-arriere-footer), var(--couleur-arriere-entete));
-    transform: scale(1.2);
-}
-
-button:active{
-    background-image: linear-gradient(0deg, var(--couleur-arriere-entete), var(--couleur-arriere-footer));
-    border: white 2px solid;
-    transform: scale(1.2);
+    
+    &:hover{
+        background-image: linear-gradient(0deg, var(--couleur-arriere-footer), var(--couleur-arriere-entete));
+        transform: scale(1.2);
+    }
+    
+    &:active{
+        background-image: linear-gradient(0deg, var(--couleur-arriere-entete), var(--couleur-arriere-footer));
+        border: white 2px solid;
+        transform: scale(1.2);
+    }
 }

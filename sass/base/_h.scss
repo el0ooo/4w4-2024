@@ -52,19 +52,17 @@ a{
     text-decoration: none;
     color: white;
     transition: color 0.2s;
+    width: fit-content;
+
+    &:hover, &:focus{
+        color: var(--couleur-footer);
+    }
+    
+    &:active{
+        color: var(--couleur-arriere-footer);
+    }
 }
 
-a:hover{
-    color: var(--couleur-footer);
-}
-
-a:active{
-    color: var(--couleur-arriere-footer);
-}
-
-a:visited{
-    color: var(--couleur-evenement);
-}
 
 .bouton{
     width: 250px;
