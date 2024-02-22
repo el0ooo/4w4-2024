@@ -104,7 +104,12 @@ p {
 }
 
 hr {
-  font-size: clamp(0.5rem, -0.125rem + 2vw, 1rem);
+  font-size: 2rem;
+  fill: var(--couleur-arriere-footer);
+  margin-top: 3vh;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
 }
 
 a {
