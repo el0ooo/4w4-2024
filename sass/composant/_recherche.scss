@@ -9,8 +9,12 @@
     color: var(--couleur-footer);
 }
 
+.recherche__button{
+    margin-left: 0px;
+}
+
 .recherche__input::placeholder{
-    color: white;
+    color: var(--couleur-accent);
     transition: color 0.2s;
 }
 

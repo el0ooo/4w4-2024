@@ -54,6 +54,7 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
   --couleur-footer: hsl(var(--hu5) var(--s-couleur) var(--l-couleur));
   --largeur-minimum: 1100px;
   --padding: 1vw;
+  --couleur-accent: white;
 }
 
 /* ----------------------------------------------------- */
@@ -115,10 +116,21 @@ a {
   width: fit-content;
 }
 a:hover, a:focus {
-  color: white;
+  color: var(--couleur-accent);
 }
 a:active {
   color: var(--couleur-arriere-footer);
+}
+a:visited {
+  color: var(--couleur-entete);
+}
+
+details {
+  padding: var(--padding);
+}
+
+meter {
+  margin-left: var(--padding);
 }
 
 button, input {
@@ -140,8 +152,12 @@ button:hover, input:hover {
 }
 button:active, input:active {
   background-image: linear-gradient(0deg, var(--couleur-arriere-entete), var(--couleur-arriere-footer));
-  border: white 2px solid;
+  border: var(--couleur-accent) 2px solid;
   transform: scale(1.2);
+}
+
+.entete__button {
+  background-image: linear-gradient(0deg, var(--couleur-arriere-galerie), var(--couleur-arriere-galerie));
 }
 
 /* ----------------------------------------------------- */
@@ -170,7 +186,7 @@ body {
   flex: 0 1 var(--largeur-minimum);
   border-radius: 15px;
   transform: skew(-10deg);
-  height: 70vh;
+  height: 80vh;
 }
 
 .global > header {
@@ -277,8 +293,12 @@ blockquote p::first-letter {
   color: var(--couleur-footer);
 }
 
+.recherche__button {
+  margin-left: 0px;
+}
+
 .recherche__input::placeholder {
-  color: white;
+  color: var(--couleur-accent);
   transition: color 0.2s;
 }
 
@@ -290,6 +310,13 @@ blockquote p::first-letter {
 
 .sociaux > a > svg {
   fill: var(--couleur-footer);
+  transform: scale(1);
+  transition: transform 0.2s, fill 0.2s;
+}
+
+.sociaux > a > svg:hover {
+  fill: var(--couleur-accent);
+  transform: scale(1.3);
 }
 
 /* ----------------------------------------------------- */

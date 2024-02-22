@@ -55,11 +55,23 @@ a{
     width: fit-content;
 
     &:hover, &:focus{
-        color: white;
+        color: var(--couleur-accent);
     }
     
     &:active{
         color: var(--couleur-arriere-footer);
     }
+
+    &:visited{
+        color: var(--couleur-entete);
+    }
+}
+
+details {
+    padding: var(--padding);
+}
+
+meter{
+    margin-left: var(--padding);
 }
 
