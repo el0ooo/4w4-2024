@@ -1,6 +1,6 @@
 button{
     font-size: clamp(0.667rem, -0.063rem + 3.5vw, 1.25rem);
-    width: 200px;
+    width: fit-content;
     height: 50px;
     padding: var(--padding);
     margin-left: 30px;
