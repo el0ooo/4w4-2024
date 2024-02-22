@@ -1,4 +1,4 @@
-button{
+button, input{
     font-size: clamp(0.667rem, -0.063rem + 3.5vw, 1.25rem);
     width: fit-content;
     height: 50px;
@@ -7,7 +7,7 @@ button{
     border-radius: 15px;
     border: 2px solid var(--couleur-footer);
     transform: scale(1);
-    color: white;
+    color: var(--couleur-footer);
     background-image: linear-gradient(0deg, var(--couleur-arriere-entete), var(--couleur-arriere-entete));
     transition: background-image 0.2s, transform 0.2s, border 0.2s;
     

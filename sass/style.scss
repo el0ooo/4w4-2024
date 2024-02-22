@@ -38,6 +38,13 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
 /* ----------------------------------------------------- */
 @import "layout";
 @import "entete";
+@import "footer";
+
+/* ----------------------------------------------------- */
+                    /*Composant*/
+/* ----------------------------------------------------- */
+@import "composant/recherche";
+@import "composant/sociaux";
 
 /* ----------------------------------------------------- */
                     /*Effets*/

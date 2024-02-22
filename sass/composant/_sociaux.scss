@@ -1,0 +1,9 @@
+.sociaux{
+    display: flex;
+    margin: 3vh;
+    gap: 2vw;
+}
+
+.sociaux > a > svg{
+    fill: var(--couleur-footer);
+}
