@@ -104,7 +104,9 @@ p {
 }
 
 hr {
-  font-size: 2rem;
+  height: 5px;
+  border: none;
+  background-color: var(--couleur-arriere-footer);
   fill: var(--couleur-arriere-footer);
   margin-top: 3vh;
   margin-left: 0px;
