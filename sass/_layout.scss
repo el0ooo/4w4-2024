@@ -21,8 +21,6 @@ body {
     //flex : grow shrink base
     flex: 0 1 var(--largeur-minimum);
     border-radius: 15px;
-    transform: skew(-10deg);
-    height: 80vh;
 }
 
 .global>header {
@@ -39,6 +37,7 @@ body {
 #accueil {
     background-color: var(--couleur-arriere-acceuil);
     color: var(--couleur-acceuil);
+    height: fit-content;
 }
 
 #galerie{

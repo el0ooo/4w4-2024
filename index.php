@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theme gr2</title>
-    <link rel="stylesheet" href="http://localhost/4w4-yec-2024/">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/normalize.css';?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css';?>">
 </head>
 <body>
     <div id="entete" class="global">
@@ -28,12 +27,18 @@
     <div id="accueil" class="global">
         <section class="accueil__section">
             <h2>Accueil (h2)</h2>
-            <h3>Site personnalisé (h3)</h3>
-            <blockquote>
-                <p>Every winter has its spring.</p>
-                <footer>-H. Tuttle<a href="https://www.today.com/life/quotes/winter-quotes-rcna48128">source</a></footer>
-            </blockquote>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut non aliquid accusamus voluptas corrupti ipsam exercitationem voluptatum, quidem ipsum, architecto modi molestias autem! Eaque libero natus sit quam vero incidunt.</p>
+            <div class="section__cours">
+           
+
+                <?php if(have_posts()):
+                        while(have_posts()): the_post();?>
+                            <div class="carte"> 
+                               <h5><?php the_title();?></h5>
+                                <p><?php echo wp_trim_words(get_the_content(), 10, "...");?></p>
+                            </div>
+                            <?php endwhile;?>
+                        <?php endif;?>
+            </div>
         </section>
     </div>
     <div id="galerie" class="global diagonale">

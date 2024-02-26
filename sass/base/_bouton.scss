@@ -6,7 +6,7 @@ button, input{
     margin-left: 30px;
     border-radius: 15px;
     border: 2px solid var(--couleur-footer);
-    transform: scale(1);
+    transform: scale(1) skew(-10deg);
     color: var(--couleur-footer);
     background-image: linear-gradient(0deg, var(--couleur-arriere-entete), var(--couleur-arriere-entete));
     transition: background-image 0.2s, transform 0.2s, border 0.2s;
