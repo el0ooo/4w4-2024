@@ -1,7 +1,7 @@
-# Exercice 1 #
+# Laboratoire 3 #
 ## Reproduire et améliorer la maquette exemple présenter au cours
 
-### Continuer la version du labo2 : 
+### Continuer la version de l'exercice 1 : 
 - Amélioration du Dossier Sass
 - Ajout dans style.css
 - Utilisation de différentes technique pour élaborer une palet de couleur
