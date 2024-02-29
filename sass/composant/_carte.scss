@@ -16,3 +16,10 @@
     width: 20vw;
     transform: skew(-10deg);
 }
+
+
+@media screen and (max-width: 1000px){
+    .carte{
+        width: 10vw;
+    }
+}

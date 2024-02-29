@@ -14,17 +14,26 @@
 - Création de liens réagissant aux événements :hover, :visited, :focus
 - Amélioration générale de la pagination
 - Ajout de nouveaux éléments HTML
+- Création d'un site WordPress
 
 À réaliser :
-- Améliorer l'entete
-- Ajouter une images
-- Ajouter un bouton
-- Ajouter plusieurs variables.
-- Ajouter des liens
-- Ajouter de nouveau éléments HTML
-- Améliorer la pagination
-- Créer une gitHub page
+Création d'un site WP.
+- Adaptation du thème de exercice #1
+- Création du modèle index.php
+- Création de la branche labo3
+- minimum 3 commits
+- Un Readme.md
+qui contiendra:
+- Le nom de l'auteur
+- L'objectif du labo3
+- Les réalisations
+- Un lien vers la github-page
 
+La section galerie affichera la liste des cours du TIM en 4 colonnes.
+
+La liste devra s'adapter aux différentes largeurs de fenêtre.
+
+## Réaliser par Yuri Eloi Chayer
 
 ## lien vers ma page github : https://el0ooo.github.io/4w4-2024/
 ## lien vers mon profil github : https://github.com/el0ooo
