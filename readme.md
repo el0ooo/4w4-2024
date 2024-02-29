@@ -37,4 +37,3 @@ La liste devra s'adapter aux différentes largeurs de fenêtre.
 
 ## lien vers ma page github : https://el0ooo.github.io/4w4-2024/
 ## lien vers mon profil github : https://github.com/el0ooo
-

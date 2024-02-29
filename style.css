@@ -328,9 +328,9 @@ blockquote p::first-letter {
 .section__cours {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 3vw;
 }
 
 .carte {
@@ -348,7 +348,7 @@ blockquote p::first-letter {
 
 @media screen and (max-width: 1000px) {
   .section__cours {
-    gap: 5px;
+    gap: 2vw;
   }
 }
 /* ----------------------------------------------------- */

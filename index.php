@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theme gr2</title>
+    <title>Theme de Yuri Eloi Chayer</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/normalize.css';?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css';?>">
 </head>
