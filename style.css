@@ -276,6 +276,7 @@ blockquote p::first-letter {
 @media screen and (max-width: 800px) {
   .entete__header {
     background-position: center;
+    background-size: 75%;
   }
 }
 .footer__section {
@@ -328,13 +329,12 @@ blockquote p::first-letter {
 .section__cours {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 3vw;
 }
 
 .carte {
-  border: 1px solid var(--couleur-entete);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -342,13 +342,21 @@ blockquote p::first-letter {
   background-color: var(--couleur-arriere-footer);
   max-width: 20vw;
   min-width: 15vw;
+  margin-left: 5px;
   transform: skew(-10deg);
   word-wrap: break-word;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 @media screen and (max-width: 1000px) {
   .section__cours {
-    gap: 2vw;
+    gap: 5vw;
+    margin-right: 5vw;
+    justify-content: center;
+  }
+  .carte {
+    min-width: 200px;
+    margin-left: 0px;
   }
 }
 /* ----------------------------------------------------- */

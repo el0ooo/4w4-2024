@@ -6,6 +6,8 @@
     <title>Theme de Yuri Eloi Chayer</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/normalize.css';?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css';?>">
+    <!-- <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
     <div id="entete" class="global">
@@ -29,10 +31,18 @@
             <h2>Accueil (h2)</h2>
             <div class="section__cours">
                 <?php if(have_posts()):
-                        while(have_posts()): the_post();?>
+                        while(have_posts()): the_post();
+                $titre = get_the_title();
+                $sigle = substr($titre, 0, 7); 
+                $temps = substr($titre, -6);
+                $titre = trim(substr($titre,8),$temps);
+                // strpos();  --- permet de retier la duree du cours et autres                
+                ?>
                             <div class="carte"> 
-                               <h5><?php the_title();?></h5>
+                                <p><?php echo $sigle ?></p>
+                               <h5><?php echo $titre; ?></h5>
                                 <p><?php echo wp_trim_words(get_the_content(), 10, "...");?></p>
+                                <p>durée : <?php echo $temps; ?></p>
                             </div>
                             <?php endwhile;?>
                         <?php endif;?>
@@ -41,7 +51,7 @@
     </div>
     <div id="galerie" class="global diagonale">
         <section class="galerie__section">
-            <h2>Gelerie (h2)</h2>
+            <h2>Galerie (h2)</h2>
             <h4>mes images (h4)</h4>
             <p>Bacon ipsum dolor amet burgdoggen brisket boudin cow ham hock sirloin. Turducken short loin andouille spare ribs pork bresaola cow. Cupim chicken alcatra, sirloin salami capicola ham hock kevin jerky. Burgdoggen brisket drumstick pork chop capicola. Burgdoggen boudin pastrami filet mignon landjaeger, shoulder tenderloin rump short ribs t-bone bresaola sausage drumstick turkey shankle. Corned beef filet mignon hamburger tongue. Swine tri-tip buffalo, t-bone tenderloin shoulder pastrami corned beef. Kevin andouille prosciutto doner pork fatback venison leberkas buffalo. Picanha bresaola pork tri-tip porchetta. Andouille fatback flank chicken, pig brisket pork chop. Sausage boudin bacon jerky spare ribs. Strip steak buffalo alcatra tri-tip bacon bresaola shankle. Pancetta picanha ribeye drumstick.</p>
         </section>
