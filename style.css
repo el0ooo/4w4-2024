@@ -340,10 +340,16 @@ blockquote p::first-letter {
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--couleur-arriere-footer);
-  width: 20vw;
+  max-width: 20vw;
+  min-width: 15vw;
   transform: skew(-10deg);
 }
 
+@media screen and (max-width: 1000px) {
+  .section__cours {
+    gap: 5px;
+  }
+}
 /* ----------------------------------------------------- */
 /*Effets*/
 /* ----------------------------------------------------- */
