@@ -15,9 +15,17 @@
     max-width: 20vw;
     min-width: 15vw;
     margin-left: 5px;
-    transform: skew(-10deg);
+    transform: skew(-10deg) scale(1);
     word-wrap: break-word;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    cursor: url("images/curseur.png") 0 0, pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;    
+
+    &:hover{
+        transform: skew(-10deg) scale(1.2);
+        box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
+        color: var(--couleur-accent);
+    }
 }
 
 

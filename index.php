@@ -34,8 +34,9 @@
                         while(have_posts()): the_post();
                 $titre = get_the_title();
                 $sigle = substr($titre, 0, 7); 
-                $temps = substr($titre, -6);
-                $titre = trim(substr($titre,8),$temps);
+                $tempsPosition = strpos($titre, "(");
+                $temps = substr($titre, $tempsPosition);
+                $titre = trim(substr($titre, 8), $temps);
                 // strpos();  --- permet de retier la duree du cours et autres                
                 ?>
                             <div class="carte"> 
