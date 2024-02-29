@@ -343,6 +343,7 @@ blockquote p::first-letter {
   max-width: 20vw;
   min-width: 15vw;
   transform: skew(-10deg);
+  word-wrap: break-word;
 }
 
 @media screen and (max-width: 1000px) {
