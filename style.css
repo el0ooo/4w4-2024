@@ -378,8 +378,20 @@ blockquote p::first-letter {
     margin-left: 0px;
   }
 }
+#menu {
+  width: 100vw;
+  height: fit-content;
+  padding: 0px;
+  margin: 0;
+  position: fixed;
+  top: 10;
+  bottom: 90;
+  z-index: 100;
+}
+
 .menu-entete-container {
   width: 100vw;
+  height: fit-content;
 }
 
 .menu {
@@ -387,6 +399,18 @@ blockquote p::first-letter {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background-color: var(--couleur-arriere-footer);
+  margin: 0;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.menu-item {
+  transform: skew(-10deg) scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+.menu-item:hover {
+  transform: skew(-10deg) scale(1.2);
 }
 
 /* ----------------------------------------------------- */

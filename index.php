@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
-    <div id="menu" class="global">
+    <div id="menu">
         <div class="entete__menu">
             <?php wp_nav_menu();?>
         </div>
