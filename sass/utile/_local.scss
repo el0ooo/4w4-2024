@@ -1,0 +1,7 @@
+.bgc-text{
+    background-color: rgba(#fff , .01);
+    padding: 15px 20px;
+    @media screen and (min-width: 1000px){
+        background-color: transparent;
+    }
+}

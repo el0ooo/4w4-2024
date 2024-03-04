@@ -10,11 +10,16 @@
     <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
+    <div id="menu" class="global">
+        <div class="entete__menu">
+            <?php wp_nav_menu();?>
+        </div>
+    </div>
     <div id="entete" class="global">
         <header class="entete__header">
-            <h1>Theme de Eloi Chayer (h1)</h1>
-            <h2>4W4 - Conception d'interface <span>et développement Web</span></h2>
-            <h5>TIM - Collège de Maisonneuve</h5>
+            <h1 class ="bgc-text">Theme de Eloi Chayer (h1)</h1>
+            <h2 class ="bgc-text">4W4 - Conception d'interface <span>et développement Web</span></h2>
+            <h5 class ="bgc-text">TIM - Collège de Maisonneuve</h5>
             <button class="entete__button">
                 <a href="https://www.larousse.fr/dictionnaires/francais/inscription/43287">Inscriptions</a>
             </button>

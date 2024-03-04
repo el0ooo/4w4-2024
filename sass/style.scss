@@ -23,9 +23,10 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* ----------------------------------------------------- */
-                    /*Variables CSS*/
+                    /*Utiles*/
 /* ----------------------------------------------------- */
 @import "variable";
+@import "utile/local";
 
 /* ----------------------------------------------------- */
                     /*Regles de base*/
@@ -46,6 +47,7 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
 @import "composant/recherche";
 @import "composant/sociaux";
 @import "composant/carte";
+@import "composant/menu";
 
 /* ----------------------------------------------------- */
                     /*Effets*/

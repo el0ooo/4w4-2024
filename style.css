@@ -20,7 +20,7 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /* ----------------------------------------------------- */
-/*Variables CSS*/
+/*Utiles*/
 /* ----------------------------------------------------- */
 :root {
   /*--couleur-arriere-entete : #ffea00;
@@ -55,6 +55,16 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
   --largeur-minimum: 1100px;
   --padding: 1vw;
   --couleur-accent: white;
+}
+
+.bgc-text {
+  background-color: rgba(255, 255, 255, 0.01);
+  padding: 15px 20px;
+}
+@media screen and (min-width: 1000px) {
+  .bgc-text {
+    background-color: transparent;
+  }
 }
 
 /* ----------------------------------------------------- */
@@ -340,6 +350,7 @@ blockquote p::first-letter {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 0 1 252.5px;
   background-color: var(--couleur-arriere-footer);
   max-width: 20vw;
   min-width: 15vw;
@@ -367,6 +378,17 @@ blockquote p::first-letter {
     margin-left: 0px;
   }
 }
+.menu-entete-container {
+  width: 100vw;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 /* ----------------------------------------------------- */
 /*Effets*/
 /* ----------------------------------------------------- */
