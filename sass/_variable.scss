@@ -37,3 +37,11 @@
 
     --couleur-accent : white;
 }
+
+#entete{
+    --_couleur-arriere-vague: var(--couleur-arriere-acceuil);
+}
+
+#evenement{
+    --_couleur-arriere-vague: var(--couleur-arriere-footer);
+}

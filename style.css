@@ -57,6 +57,14 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
   --couleur-accent: white;
 }
 
+#entete {
+  --_couleur-arriere-vague: var(--couleur-arriere-acceuil);
+}
+
+#evenement {
+  --_couleur-arriere-vague: var(--couleur-arriere-footer);
+}
+
 .bgc-text {
   background-color: rgba(255, 255, 255, 0.01);
   padding: 15px 20px;
@@ -432,6 +440,10 @@ blockquote p::first-letter {
   width: calc(100% + 1.3px);
   height: 42px;
   transform: rotateY(180deg);
+}
+
+.remplissage {
+  fill: var(--_couleur-arriere-vague);
 }
 
 .diagonale {
