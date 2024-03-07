@@ -110,7 +110,4 @@
 #chk_burger:checked ~ .menu-principal-container{
     transform: translateX(0%);
     transition: transform 0.3s ease-in-out;
-    @media  screen and (min-width: 1000px){
-        
-    }
 }
