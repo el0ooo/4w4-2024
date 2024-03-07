@@ -1,50 +1,116 @@
-// <div id="menu" class="global">
-//     <div class="entete__menu">
-//     // générer par wp_nav_menu()
-//         <div class="menu-entete-container">
-//             <ul id="menu-entete" class="menu">
-//                 <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost/4w4-yec-2024/2020/10/07/582-6n3-stage-285h/">582-6N3</a></li>
-//                 <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"><a href="http://localhost/4w4-yec-2024/2020/10/07/582-5mbtechnologies-emergentes-et-avancees-volet-creation-60h/">582-5MB</a></li>
-//                 <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"><a href="http://localhost/4w4-yec-2024/2020/10/07/582-5w5-projet-web-en-equipe-105h/">582-5W5</a></li>
-//                 <li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-36"><a href="http://localhost/4w4-yec-2024/2020/10/07/350-5n1-communication-et-dynamique-dune-equipe-de-travail-45h/">350-5N1</a></li>
-//                 <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-37"><a href="http://localhost/4w4-yec-2024/2020/10/07/393-5e1-methodes-de-recherche-et-preparation-au-marche-du-travail-45h/">393-5E1</a></li>
-//             </ul>
-//         </div>
-//     </div>
-// </div>
+// <nav class="menu-principal-container">
+//  <ul id="menu-principal" class="menu"><li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-38"><a href="http://localhost/4w4-yec-2024/2020/10/07/description-du-cours-582-1m1-creation-video/">Création vidéo</a></li>
+//      <li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-40"><a href="http://localhost/4w4-yec-2024/2020/10/07/582-2m3-effets-speciaux-et-animation-60h/">Effets spéciaux et animation</a></li>
+//      <li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-41"><a href="http://localhost/4w4-yec-2024/2020/10/07/582-3m5imagerie-3d-75h/">Imagerie 3D</a></li>
+//      <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-42"><a href="http://localhost/4w4-yec-2024/2020/10/07/582-4mb-animation-3d-75h/">Animation 3D</a></li>
+//      <li id="menu-item-43" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43"><a href="http://*accueil">Accueil</a></li>
+//      <li id="menu-item-44" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44"><a href="http://*galerie">Galerie</a></li>
+//      <li id="menu-item-45" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45"><a href="http://*evenement">Événements</a></li>
+//  </ul>
+// </nav>
 #menu{
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100vw;
-    height: fit-content;
+    height: 100vh;
     padding: 0px;
     margin: 0;
-    position: fixed;
-    top: 10;
-    bottom: 90;
     z-index: 100;
+    @media  screen and (min-width: 1000px){
+        position: fixed;
+        height: fit-content;
+        top: 10;
+        bottom: 90;
+    }
+
 }
 
-.menu-entete-container{ //div
+.menu-principal-container{ //nav
     width: 100vw;
-    height: fit-content;
+    height: 100vh;
+    transform: translateX(100%);
+    @media  screen and (min-width: 1000px){
+        height: fit-content;
+        transform: translateX(0%);
+    }
 }
 
 
-.menu{ //ul
+#menu-principal{ //ul
     list-style-type: none;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     background-color: var(--couleur-arriere-footer);
     margin: 0;
     padding: 10px;
+    padding-top: 30px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    height: 100vh;
+    @media  screen and (min-width: 1000px){
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: fit-content;
+    }
 }
 
 .menu-item{ //li
     transform: skew(-10deg) scale(1);
     transition: transform 0.3s ease-in-out;
-    
+
     &:hover{
         transform: skew(-10deg) scale(1.2);
+    }
+}
+
+.menu-item a{ //a
+    text-decoration: none;
+    color: var(--couleur-arriere-acceuil);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+
+    &:hover{
+        color: var(--couleur-accent);
+    }
+}
+
+.entete__menu{
+    position: relative;
+}
+
+#burger{
+    position: absolute;
+    left: 90%;
+    top: 2%;
+    display: block;
+    transform: scale(2);
+    z-index: 1000;
+    @media  screen and (min-width: 1000px){
+        display: none;
+    }
+}
+
+#burger > svg > path{
+    fill: black;
+    transition: fill 0.3s ease-in-out;
+    &:hover{
+        fill: var(--couleur-accent);
+    }
+}
+
+#chk_burger{
+    display: none;
+}
+
+#chk_burger:checked ~ .menu-principal-container{
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in-out;
+    @media  screen and (min-width: 1000px){
+        
     }
 }
