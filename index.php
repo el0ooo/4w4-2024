@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theme de Yuri Eloi Chayer</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/normalize.css';?>">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css';?>">
-    <!-- <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css"> -->
-</head>
-<body>
-    <div id="menu">
-        <div class="entete__menu">
-            <?php wp_nav_menu();?>
-        </div>
-    </div>
+<?php  /*modele de base index.php*/
+    get_header();
+
+?>
     <div id="entete" class="global">
-        <header class="entete__header">
+        <section class="entete__header">
             <h1 class ="bgc-text">Theme de Eloi Chayer (h1)</h1>
             <h2 class ="bgc-text">4W4 - Conception d'interface <span>et développement Web</span></h2>
             <h5 class ="bgc-text">TIM - Collège de Maisonneuve</h5>
@@ -24,7 +11,7 @@
                 <a href="https://www.larousse.fr/dictionnaires/francais/inscription/43287">Inscriptions</a>
             </button>
             <hr>
-        </header>
+        </section>
         <div class="vague">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" style="fill:var(--couleur-arriere-acceuil)"></path>

@@ -1,9 +1,10 @@
 .section__cours{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 3vw;
+
 }
 
 .carte{
