@@ -481,6 +481,7 @@ blockquote p::first-letter {
 #burger > svg > path {
   fill: black;
   transition: fill 0.3s ease-in-out;
+  padding: 2px;
 }
 #burger > svg > path:hover {
   fill: var(--couleur-accent);
@@ -488,6 +489,15 @@ blockquote p::first-letter {
 
 #chk_burger {
   display: none;
+}
+#chk_burger:checked + #burger > svg {
+  transform: rotate(180deg);
+}
+#chk_burger:checked + #burger > svg > path {
+  fill: var(--couleur-arriere-acceuil);
+}
+#chk_burger:checked + #burger > svg > path:hover {
+  fill: var(--couleur-accent);
 }
 
 #chk_burger:checked ~ .menu-principal-container {
