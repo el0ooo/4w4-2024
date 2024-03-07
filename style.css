@@ -399,7 +399,6 @@ blockquote p::first-letter {
 }
 @media screen and (min-width: 1000px) {
   #menu {
-    position: fixed;
     height: fit-content;
     top: 10;
     bottom: 90;
