@@ -1,24 +1,64 @@
-# Laboratoire 4 #
+# TP1 - club de voyage #
 ### Réaliser par Yuri Eloi Chayer
 ## Reproduire et améliorer la maquette exemple présenter au cours
 
-Créer une nouvelle branche « labo4 »
-- Ajouter un menu permettant d'accéder
-  à vos cinq cours préférés
-  à chacune des sections de la page
+Objectifs du TP1:
+-	Réaliser un site WordPress pour un club de voyage. Le club offre à ses membres des voyages vers des destinations originales partout dans le monde.
+-	Chaque destination est catégorisée pour permettre aux membres de se renseigner de façon spécifique selon leur gout.
+-	Le design général permettra de mettre en valeur les offres de voyages réservées à ses membres.
+-	Déployer votre projet sur le serveur Web hosting Canada.
 
-- Le menu doit être formatter en utilisant 
-  composant/_menu.scss
-  Le menu doit être adaptatif et être amovible en version mobile.
+Catégorie de voyage :
+Grandeur du Groupe :
+o	Voyage en groupe
+o	Voyage en petit comité
+o	Voyage en solo
+o	Types de Voyage :
+Type de voyage :
+o	Aventure
+o	Culturel
+o	Repos
+o	Intime
+o	Sportif
+o	Économique
+o	Luxueux
+o	Paysage
+o	Pleine nature
 
-- Créer le template header.php qui contiendra la structure d'entête de la page qui sera reproduite
-dans chacun des modules du thème
-Créer un template-part qui permettra d'afficher les vagues.
+Ce projet vous permettra d'améliorer globalement votre thème existant en y intégrant les éléments suivants:
+•	Un pied de page
+•	Un design de thème amélioré avec Sass et PHP
+•	Amélioration de l'affichage produit par les modèles:
+o	front-page.php
+o	single.php
+o	category.php
+o	search.php
+o	header.php
+o	footer.php
+•	Une mise en page entièrement adaptative
+Déroulement du projet
+Les « commits » seront poussés dans le dépôt 4w4 de votre GitHub dans la branche tp1.
+L'ensemble des commits devra s'étaler progressivement à partir de la journée de remise du devis jusqu'à la remise finale du TP.
+Un minimum de 30 commits pour le thème permettra d'évaluer l'évolution de votre projet.
+Le serveur « WHC » Web hosting canada
+Utilisez votre compte «WHC » pour déployer la version finale de votre site.
+Gardez votre environnement de fichiers « WHC » le plus simple possible en retirant tous les éléments non nécessaires.
+________________________________________
+Le pied de page: footer.php
+La zone footer permettra d'intégrer des liens conçus à partir de la fonctionnalité «menu» de WordPress.
+Design amélioré
+La pagination globale « layout » du site et les différentes zones de la page: l'entête, le footer et la partie principale « main » de la page devront être bien structurés, clairs, originaux et entièrement adaptatifs.
+Barème de correction sur 20 points
+1.	Organisation des commits sur GitHub minimum 20 commits pour le thème (5 points)
+•	Minimum de 20 commits étalés sur toute la durée du TP
+•	Messages clairs, spécifiques, préfixés et non redondants
+•	Une branche tp1
+•	Déploiement de votre site sur « WHC »
+•	Un readme.md pour le thème: auteur, titre du projet, description et lien vers votre site sur l’hébergeur « WHC »
 
-- Barème de correction
-Intégration de chacun des éléments précédents de façon structuré. (1 point)
-Création d'une github-page à partir de index.htm
-production de 5 commits
-Design général de la page (1 point)
+2.	Organisation de l'entête, footer et partie principale. Qualité du design et de l'intégration des différents éléments de contenu. Notamment, les articles de destinations de voyage s'affichent de façon optimale. Les modèles: header.php, footer.php, category.php, front-page.php et single.php sont bien structurés et affichent l'information prévue. (10 points)
+
+3.	Design général de la page et organisation de la programmation Sass, PHP. Organisation des menus, bouton burger pour afficher le menu principal pour les petits écrans. Adaptabilité générale du site. En Sass utilisation du mapping de couleurs. (5 points)
+
 ## lien vers ma page github : https://el0ooo.github.io/4w4-2024/
 ## lien vers mon profil github : https://github.com/el0ooo
