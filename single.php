@@ -2,15 +2,13 @@
     get_header();
 
 ?>
-    <h2>Single.php</h2>
     <div id="accueil" class="global">
         <section class="accueil__section">
-            <h2>Accueil (h2)</h2>
                 <?php if(have_posts()):
                         while(have_posts()): the_post();
                         // strpos();  --- permet de retier la duree du cours et autres                
                 ?>
-                        <h5><?php the_title(); ?></h5>
+                        <h3><?php the_title(); ?></h3>
                         <p><?php the_content();?></p>
                     <?php endwhile;?>
                 <?php endif;?>

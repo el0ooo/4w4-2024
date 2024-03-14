@@ -229,6 +229,7 @@ body {
   color: var(--couleur-acceuil);
   height: fit-content;
   padding-bottom: 6vh;
+  padding-top: 60px;
 }
 
 #galerie {
@@ -291,6 +292,11 @@ blockquote p::first-letter {
 
 .entete__header span {
   display: block;
+}
+
+.custom_logo {
+  height: 50px;
+  width: 50px;
 }
 
 @media screen and (max-width: 800px) {
