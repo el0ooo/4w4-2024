@@ -8,7 +8,7 @@ Objectifs du TP1:
 -	Le design général permettra de mettre en valeur les offres de voyages réservées à ses membres.
 -	Déployer votre projet sur le serveur Web hosting Canada.
 
-Catégorie de voyage :
+#### Catégorie de voyage : #### 
 Grandeur du Groupe :
 o	Voyage en groupe
 o	Voyage en petit comité
@@ -25,7 +25,7 @@ o	Luxueux
 o	Paysage
 o	Pleine nature
 
-Ce projet vous permettra d'améliorer globalement votre thème existant en y intégrant les éléments suivants:
+#### Ce projet vous permettra d'améliorer globalement votre thème existant en y intégrant les éléments suivants: #### 
 •	Un pied de page
 •	Un design de thème amélioré avec Sass et PHP
 •	Amélioration de l'affichage produit par les modèles:
@@ -36,7 +36,8 @@ o	search.php
 o	header.php
 o	footer.php
 •	Une mise en page entièrement adaptative
-Déroulement du projet
+
+#### Déroulement du projet ####
 Les « commits » seront poussés dans le dépôt 4w4 de votre GitHub dans la branche tp1.
 L'ensemble des commits devra s'étaler progressivement à partir de la journée de remise du devis jusqu'à la remise finale du TP.
 Un minimum de 30 commits pour le thème permettra d'évaluer l'évolution de votre projet.
@@ -48,7 +49,8 @@ Le pied de page: footer.php
 La zone footer permettra d'intégrer des liens conçus à partir de la fonctionnalité «menu» de WordPress.
 Design amélioré
 La pagination globale « layout » du site et les différentes zones de la page: l'entête, le footer et la partie principale « main » de la page devront être bien structurés, clairs, originaux et entièrement adaptatifs.
-Barème de correction sur 20 points
+
+#### Barème de correction sur 20 points #### 
 1.	Organisation des commits sur GitHub minimum 20 commits pour le thème (5 points)
 •	Minimum de 20 commits étalés sur toute la durée du TP
 •	Messages clairs, spécifiques, préfixés et non redondants
