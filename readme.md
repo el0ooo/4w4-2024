@@ -1,8 +1,7 @@
 # TP1 - club de voyage #
 ### Réaliser par Yuri Eloi Chayer
-## Reproduire et améliorer la maquette exemple présenter au cours
 
-Objectifs du TP1:
+#### Objectifs du TP1: #### 
 -	Réaliser un site WordPress pour un club de voyage. Le club offre à ses membres des voyages vers des destinations originales partout dans le monde.
 -	Chaque destination est catégorisée pour permettre aux membres de se renseigner de façon spécifique selon leur gout.
 -	Le design général permettra de mettre en valeur les offres de voyages réservées à ses membres.
@@ -51,7 +50,7 @@ Design amélioré
 La pagination globale « layout » du site et les différentes zones de la page: l'entête, le footer et la partie principale « main » de la page devront être bien structurés, clairs, originaux et entièrement adaptatifs.
 
 #### Barème de correction sur 20 points #### 
-1.	Organisation des commits sur GitHub minimum 20 commits pour le thème (5 points)
+1.	Organisation des commits sur GitHub minimum 30 commits pour le thème (5 points)
 •	Minimum de 20 commits étalés sur toute la durée du TP
 •	Messages clairs, spécifiques, préfixés et non redondants
 •	Une branche tp1
