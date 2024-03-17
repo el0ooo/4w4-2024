@@ -10,13 +10,12 @@
             <button class="entete__button">
                 <a href="https://www.larousse.fr/dictionnaires/francais/inscription/43287">Inscriptions</a>
             </button>
-            <hr>
         </section>
         <?php get_template_part('gabarit/vague');?>
     </div>
     <div id="accueil" class="global">
         <section class="accueil__section">
-            <h2>Accueil (h2)</h2>
+            <h2>Destinations</h2>
             <div class="section__cours">
                 <?php if(have_posts()):
                         while(have_posts()): the_post();
@@ -34,25 +33,25 @@
     </div>
     <div id="galerie" class="global diagonale">
         <section class="galerie__section">
-            <h2>Galerie (h2)</h2>
-            <h4>mes images (h4)</h4>
-            <p>Bacon ipsum dolor amet burgdoggen brisket boudin cow ham hock sirloin. Turducken short loin andouille spare ribs pork bresaola cow. Cupim chicken alcatra, sirloin salami capicola ham hock kevin jerky. Burgdoggen brisket drumstick pork chop capicola. Burgdoggen boudin pastrami filet mignon landjaeger, shoulder tenderloin rump short ribs t-bone bresaola sausage drumstick turkey shankle. Corned beef filet mignon hamburger tongue. Swine tri-tip buffalo, t-bone tenderloin shoulder pastrami corned beef. Kevin andouille prosciutto doner pork fatback venison leberkas buffalo. Picanha bresaola pork tri-tip porchetta. Andouille fatback flank chicken, pig brisket pork chop. Sausage boudin bacon jerky spare ribs. Strip steak buffalo alcatra tri-tip bacon bresaola shankle. Pancetta picanha ribeye drumstick.</p>
+            <h2>Galerie</h2>
+            <h4>Aventure</h4>
+            <div id="diaporama"></div>
         </section>
     </div>
     <div id="evenement" class="global">
         <section class="evenement__section">
-            <h2>Evenement (h2)</h2>
+            <h2>Evenement</h2>
             <div class="groupe-info">
-                <h5>Patin sur glace exterrieur (h5)</h5>
+                <h5>Via ferrata</h5>
                 <p>Bacon ipsum dolor amet fatback rump hamburger porchetta chicken pork. Tenderloin andouille cow spare ribs, chicken tri-tip meatball bacon flank capicola sirloin pig leberkas. Spare ribs biltong pork, prosciutto sirloin cow pastrami tail turducken. Rump shoulder salami tail.</p>
-                <p>Achalandage<meter optimum="40" high="80" max="100" value="50">85%</meter></p>
+                <p>Achalandage<meter optimum="40" high="80" max="100" value="10">10%</meter></p>
                 <details>
                     <summary>En savoir plus</summary>
-                    <p>Pour plus d'information, visitez le site de la patinoire</p>
-                    <a href="https://patinoireduvieuxport.com/">Patinoire du Vieux port</a>
+                    <p>Pour plus d'information, visitez le site de la via ferrata</p>
+                    <a href="https://via-ferrata-dolomites.com/">Via ferrata dans les dolomites</a>
                 </details>
             </div>
-            <h5>Vente de vetements (h5)</h5>
+            <h5>Vente de vetements</h5>
             <button>
                 <a href="https://github.com/el0ooo">Vêtements</a>
             </button>

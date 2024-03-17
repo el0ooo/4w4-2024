@@ -11,7 +11,7 @@
 #menu{
     position: fixed;
     left: 0;
-    top: -58px;
+    top: 0px;
     width: 100vw;
     height: 100vh;
     padding: 0px;
@@ -67,19 +67,22 @@
 
 .menu-item a{ //a
     text-decoration: none;
-    color: var(--couleur-arriere-acceuil);
+    color: var(--couleur-accent);
     font-size: 1.5em;
     text-transform: uppercase;
     padding: 10px;
     transition: color 0.3s ease-in-out;
 
     &:hover{
-        color: var(--couleur-accent);
+        color: var(--couleur-arriere-footer);
     }
 }
 
 .entete__menu{
     position: relative;
+    @media  screen and (min-width: 1000px){
+        top: -61px;
+    }
 }
 
 #burger{
@@ -95,7 +98,7 @@
 }
 
 #burger > svg > path{
-    fill: black;
+    fill: var(--couleur-accent);
     transition: fill 0.3s ease-in-out;
     padding: 2px;
     &:hover{
@@ -110,7 +113,7 @@
     }
 
     &:checked + #burger > svg > path{
-        fill: var(--couleur-arriere-acceuil);
+        fill: var(--couleur-arriere-footer);
         &:hover{
             fill: var(--couleur-accent);
         }
