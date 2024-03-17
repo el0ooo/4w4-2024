@@ -35,7 +35,7 @@
         <section class="galerie__section">
             <h2>Galerie</h2>
             <h4>Aventure</h4>
-            <div id="diaporama"></div>
+            <div id="diaporama-aventure"></div>
         </section>
     </div>
     <div id="evenement" class="global">

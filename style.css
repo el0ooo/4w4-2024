@@ -231,6 +231,19 @@ body {
   padding-top: 60px;
 }
 
+.accueil__section h2 ul {
+  list-style-type: none;
+}
+
+.accueil__section h2 ul li::marker {
+  display: none;
+}
+
+.accueil__section h2 ul li a {
+  font-size: clamp(0.667rem, -2.146rem + 13.5vw, 2.917rem);
+  color: var(--couleur-acceuil);
+}
+
 #galerie {
   background: linear-gradient(180deg, var(--couleur-arriere-acceuil), var(--couleur-arriere-evenement));
   color: var(--couleur-galerie);
@@ -238,7 +251,20 @@ body {
   z-index: 1;
 }
 
-#diaporama {
+.galerie__section h4 ul {
+  list-style-type: none;
+}
+
+.galerie__section h4 ul li::marker {
+  display: none;
+}
+
+.galerie__section h2 ul li a {
+  font-size: clamp(0.667rem, -1.104rem + 8.5vw, 2.083rem);
+  color: var(--couleur-galerie);
+}
+
+#diaporama-aventure {
   width: 100%;
   height: 700px;
   background: none;
@@ -249,7 +275,7 @@ body {
   -webkit-animation-timing-function: linear;
 }
 @media screen and (max-width: 1000px) {
-  #diaporama {
+  #diaporama-aventure {
     height: 400px;
     width: 100%;
   }
@@ -534,7 +560,7 @@ header img:hover {
   transition: color 0.3s ease-in-out;
 }
 .menu-item a:hover {
-  color: var(--couleur-arriere-footer);
+  color: var(--couleur-arriere-acceuil);
 }
 
 .entete__menu {

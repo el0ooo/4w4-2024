@@ -14,20 +14,27 @@
                 <?php endif;?>
         </section>
     </div>
+    <div id="galerie" class="global diagonale">
+        <section class="galerie__section">
+            <h2>Galerie</h2>
+            <h4>Aventure</h4>
+            <div id="diaporama-aventure"></div>
+        </section>
+    </div>
     <div id="evenement" class="global">
         <section class="evenement__section">
-            <h2>Evenement (h2)</h2>
+            <h2>Evenement</h2>
             <div class="groupe-info">
-                <h5>Patin sur glace exterrieur (h5)</h5>
+                <h5>Via ferrata</h5>
                 <p>Bacon ipsum dolor amet fatback rump hamburger porchetta chicken pork. Tenderloin andouille cow spare ribs, chicken tri-tip meatball bacon flank capicola sirloin pig leberkas. Spare ribs biltong pork, prosciutto sirloin cow pastrami tail turducken. Rump shoulder salami tail.</p>
-                <p>Achalandage<meter optimum="40" high="80" max="100" value="50">85%</meter></p>
+                <p>Achalandage<meter optimum="40" high="80" max="100" value="10">10%</meter></p>
                 <details>
                     <summary>En savoir plus</summary>
-                    <p>Pour plus d'information, visitez le site de la patinoire</p>
-                    <a href="https://patinoireduvieuxport.com/">Patinoire du Vieux port</a>
+                    <p>Pour plus d'information, visitez le site de la via ferrata</p>
+                    <a href="https://via-ferrata-dolomites.com/">Via ferrata dans les dolomites</a>
                 </details>
             </div>
-            <h5>Vente de vetements (h5)</h5>
+            <h5>Vente de vetements</h5>
             <button>
                 <a href="https://github.com/el0ooo">Vêtements</a>
             </button>
