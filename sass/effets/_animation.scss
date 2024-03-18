@@ -1,0 +1,77 @@
+@keyframes diapo-aventure{
+    0%{
+        background-image: url("images/aventure/escalade.jpg");
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    20%{
+        background-image: url("images/aventure/kayak.jpg");
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    40%{
+        background-image: url("images/aventure/montagne.jpg");
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    60%{
+        background-image: url("images/aventure/parachute.jpg");
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    80%{
+        background-image: url("images/aventure/train.jpg");
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url("images/aventure/escalade.jpg");
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@keyframes diapo-sport{
+    0%{
+        background-image: url("images/sport/velo.jpg");
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    20%{
+        background-image: url("images/sport/natation.jpg");
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    40%{
+        background-image: url("images/sport/ski.jpg");
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    60%{
+        background-image: url("images/sport/basket.jpg");
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    80%{
+        background-image: url("images/sport/surf.jpg");
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url("images/sport/velo.jpg");
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
