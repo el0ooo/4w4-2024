@@ -24,19 +24,16 @@
         <section class="evenement__section">
             <h2>Evenement</h2>
             <div class="groupe-info">
-                <h5>Via ferrata</h5>
+                <h5>Activité</h5>
                 <p>Bacon ipsum dolor amet fatback rump hamburger porchetta chicken pork. Tenderloin andouille cow spare ribs, chicken tri-tip meatball bacon flank capicola sirloin pig leberkas. Spare ribs biltong pork, prosciutto sirloin cow pastrami tail turducken. Rump shoulder salami tail.</p>
                 <p>Achalandage<meter optimum="40" high="80" max="100" value="10">10%</meter></p>
                 <details>
                     <summary>En savoir plus</summary>
-                    <p>Pour plus d'information, visitez le site de la via ferrata</p>
-                    <a href="https://via-ferrata-dolomites.com/">Via ferrata dans les dolomites</a>
+                    <p>Pour plus d'information, visitez le site de l'activité</p>
+                    <a href="">l'activité</a>
                 </details>
             </div>
-            <h5>Vente de vetements</h5>
-            <button>
-                <a href="https://github.com/el0ooo">Vêtements</a>
-            </button>
+
         </section>
         <?php get_template_part('gabarit/vague');?>
     </div>

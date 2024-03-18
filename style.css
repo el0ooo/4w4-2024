@@ -526,8 +526,8 @@ header img:hover {
 }
 #menu {
   position: fixed;
-  left: 0;
-  top: 0px;
+  left: 0px;
+  top: 10px;
   width: 100vw;
   height: 100vh;
   padding: 0px;
@@ -568,7 +568,7 @@ header img:hover {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   height: 100vh;
   position: relative;
-  top: -60px;
+  top: -70px;
 }
 @media screen and (min-width: 1000px) {
   #menu-principal {
@@ -601,6 +601,7 @@ header img:hover {
 
 .entete__menu {
   position: relative;
+  top: 0px;
 }
 @media screen and (min-width: 1000px) {
   .entete__menu {
