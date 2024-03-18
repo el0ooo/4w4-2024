@@ -24,7 +24,7 @@
         <section class="galerie__section">
             <h2>Galerie</h2>
             <h4><?php the_category();?></h4>
-            <div id="diaporama-aventure"></div>
+            <div id="<?php if(get_the_category() == "Aventure"):?>diaporama-aventure<?php endif;?><?php if (get_the_category() == "Sport"):?>diaporama-sport<?php endif;?><?php if(get_the_category() == "Pleine nature"):?>diaporama-pliene-nature"><?php endif;?></div>
         </section>
     </div>
     <?php 

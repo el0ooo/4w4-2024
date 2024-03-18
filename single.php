@@ -1,6 +1,5 @@
 <?php  /*modele de base index.php*/
     get_header();
-
 ?>
     <div id="accueil" class="global">
         <section class="accueil__section">

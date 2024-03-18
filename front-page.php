@@ -1,7 +1,8 @@
 <?php  /*modele de base index.php*/
     get_header();
-
+    $diapoAleatoire = rand(1, 3);
 ?>
+    <div class="filtre__grain"></div>
     <div id="entete" class="global">
         <section class="entete__header">
             <h1 class ="bgc-text"><?php echo get_bloginfo('name')?></h1>
@@ -18,24 +19,24 @@
             <h2>Destinations</h2>
             <div class="section__cours">
                 <?php if(have_posts()):
-                        while(have_posts()): the_post();
-                        // strpos();  --- permet de retier la duree du cours et autres                
+                        while(have_posts()): the_post();      
                 ?>
-                            <div class="carte"> 
-                               <h5><?php the_title(); ?></h5>
-                                <p><?php echo wp_trim_words(get_the_content(), 10, "...");?></p>
-                                <p><a href= "<?php echo get_permalink()?>">Voir la suite</a></p>
-                            </div>
-                            <?php endwhile;?>
-                        <?php endif;?>
+                        <div class="carte"> 
+                            <h5><?php the_title(); ?></h5>
+                            <p><?php echo wp_trim_words(get_the_content(), 10, "...");?></p>
+                            <p class="categori__carte"><?php the_category();?></p>
+                            <p><a href= "<?php echo get_permalink()?>">Voir la suite</a></p>
+                        </div>
+                    <?php endwhile;?>
+                <?php endif;?>
             </div>
         </section>
     </div>
     <div id="galerie" class="global diagonale">
         <section class="galerie__section">
             <h2>Galerie</h2>
-            <h4>Aventure</h4>
-            <div id="diaporama-aventure"></div>
+            <h4>Photos de voyage</h4>
+            <div id="<?php if($diapoAleatoire == 1):?>diaporama-pliene-nature<?php endif; ?><?php if($diapoAleatoire == 2):?>diaporama-sport<?php endif; ?><?php if($diapoAleatoire == 3):?>diaporama-aventure<?php endif; ?>"></div>
         </section>
     </div>
     <div id="evenement" class="global">

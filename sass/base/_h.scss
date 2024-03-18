@@ -3,11 +3,12 @@ Selecteurs textuels de base
 */
 h1 {
     font-size: clamp(1rem, -1.917rem + 14vw, 3.333rem);
-    text-shadow: 2px 2px var(--couleur-acceuil);
+    text-shadow: 2px 2px var(--couleur-accent);
 }
 
 h2 {
     font-size: clamp(0.667rem, -2.146rem + 13.5vw, 2.917rem);
+    text-shadow: 2px 2px var(--couleur-accent);
 }
 
 h3 {

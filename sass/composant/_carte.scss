@@ -19,12 +19,30 @@
     transform: skew(-10deg) scale(1);
     word-wrap: break-word;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 15px;
     cursor: url("images/curseur.png") 0 0, pointer;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;    
 
     &:hover{
         transform: skew(0deg) scale(1.2);
         box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
+        color: var(--couleur-accent);
+    }
+}
+
+.post-categories{
+    list-style-type: none;
+    margin: 0;
+}
+
+.post-categories li::marker{
+    display: none;
+}
+
+.post-categories li a{
+    font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+    font-family: 'Bebas Neue', sans-serif;
+    &:hover{
         color: var(--couleur-accent);
     }
 }
