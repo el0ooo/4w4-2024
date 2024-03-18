@@ -2,7 +2,6 @@
     get_header();
     $diapoAleatoire = rand(1, 3);
 ?>
-    <div class="filtre__grain"></div>
     <div id="entete" class="global">
         <section class="entete__header">
             <h1 class ="bgc-text"><?php echo get_bloginfo('name')?></h1>
@@ -64,5 +63,3 @@
     // recuperer le fichier footer.php
     get_footer();
     ?>
-</body>
-</html>

@@ -7,16 +7,14 @@
             <h2><?php the_category();?></h2>
             <div class="section__cours">
                 <?php if(have_posts()):
-                        while(have_posts()): the_post();
-                        // strpos();  --- permet de retier la duree du cours et autres                
-                ?>
-                            <div class="carte"> 
-                               <h5><?php the_title(); ?></h5>
-                                <p><?php echo wp_trim_words(get_the_content(), 10, "...");?></p>
-                                <p><a href= "<?php echo get_permalink()?>">Voir la suite</a></p>
-                            </div>
-                            <?php endwhile;?>
-                        <?php endif;?>
+                    while(have_posts()): the_post(); ?>
+                        <div class="carte"> 
+                           <h5><?php the_title(); ?></h5>
+                            <p><?php echo wp_trim_words(get_the_content(), 10, "...");?></p>
+                            <p><a href= "<?php echo get_permalink()?>">Voir la suite</a></p>
+                        </div>
+                    <?php endwhile;?>
+                <?php endif;?>
             </div>
         </section>
     </div>
@@ -24,12 +22,12 @@
         <section class="galerie__section">
             <h2>Galerie</h2>
             <h4><?php the_category();?></h4>
-            <div id="<?php if(get_the_category() == "Aventure"):?>diaporama-aventure<?php endif;?><?php if (get_the_category() == "Sport"):?>diaporama-sport<?php endif;?><?php if(get_the_category() == "Pleine nature"):?>diaporama-pliene-nature"><?php endif;?></div>
+            <!-- vouloir faire en sorte d'afficher un diaporama avec des images de la categorie active -->
+            <div id="diaporama-aventure"></div>
         </section>
     </div>
+
     <?php 
     // recuperer le fichier footer.php
     get_footer();
     ?>
-</body>
-</html>

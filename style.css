@@ -204,7 +204,7 @@ body {
   left: 0;
   opacity: 0.23;
   background: linear-gradient(to bottom, var(--couleur-arriere-entete), var(--couleur-arriere-footer)), url(https://grainy-gradients.vercel.app/noise.svg);
-  z-index: 1000000;
+  z-index: 10;
   pointer-events: none;
 }
 
@@ -696,36 +696,42 @@ header img:hover {
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   20% {
     background-image: url("images/aventure/kayak.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   40% {
     background-image: url("images/aventure/montagne.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   60% {
     background-image: url("images/aventure/parachute.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   80% {
     background-image: url("images/aventure/train.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   100% {
     background-image: url("images/aventure/escalade.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
 }
 @keyframes diapo-sport {
@@ -734,36 +740,42 @@ header img:hover {
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   20% {
     background-image: url("images/sport/natation.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   40% {
     background-image: url("images/sport/ski.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   60% {
     background-image: url("images/sport/basket.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   80% {
     background-image: url("images/sport/surf.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   100% {
     background-image: url("images/sport/velo.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
 }
 @keyframes diapo-pliene-nature {
@@ -772,35 +784,44 @@ header img:hover {
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   20% {
     background-image: url("images/pliene_nature/lac.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   40% {
     background-image: url("images/pliene_nature/montagneNeige.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   60% {
     background-image: url("images/pliene_nature/ocean.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   80% {
     background-image: url("images/pliene_nature/route.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
   100% {
     background-image: url("images/pliene_nature/arbres.jpg");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/* ----------------------------------------------------- */
+/*Autres*/
+/* ----------------------------------------------------- *//*# sourceMappingURL=style.css.map */
