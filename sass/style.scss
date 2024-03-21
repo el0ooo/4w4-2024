@@ -15,6 +15,8 @@ Text Domain: Theme-gr2
 Ce theme a ete developpe dans le cadre du cours 4w4.
 */
 
+
+
 /* ----------------------------------------------------- */
                    /*Police d'ecriture*/
 /* ----------------------------------------------------- */
@@ -26,6 +28,7 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
                     /*Utiles*/
 /* ----------------------------------------------------- */
 @import "variable";
+@import "utile/couleur-class";
 @import "utile/local";
 
 /* ----------------------------------------------------- */

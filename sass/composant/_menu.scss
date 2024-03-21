@@ -42,7 +42,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    background-color: var(--couleur-arriere-footer);
+    //background-color: var(--couleur-arriere-footer);
+    background-color: $--clr-bleu-fonce;
     margin: 0;
     padding: 10px;
     padding-top: 100px;

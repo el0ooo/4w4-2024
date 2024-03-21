@@ -65,6 +65,158 @@ Ce theme a ete developpe dans le cadre du cours 4w4.
   --_couleur-arriere-vague: var(--couleur-arriere-footer);
 }
 
+#footer {
+  --_couleur-arriere-vague: var(--couleur-arriere-footer);
+}
+
+.clr-primaire-100 {
+  color: hsl(220, 100%, 85%);
+}
+
+.bck-primaire-100 {
+  background-color: hsl(220, 100%, 85%);
+}
+
+.clr-primaire-200 {
+  color: hsl(220, 100%, 60%);
+}
+
+.bck-primaire-200 {
+  background-color: hsl(220, 100%, 60%);
+}
+
+.clr-primaire-300 {
+  color: hsl(220, 100%, 30%);
+}
+
+.bck-primaire-300 {
+  background-color: hsl(220, 100%, 30%);
+}
+
+.clr-primaire-400 {
+  color: hsl(220, 100%, 15%);
+}
+
+.bck-primaire-400 {
+  background-color: hsl(220, 100%, 15%);
+}
+
+.clr-secondaire-100 {
+  color: hsl(40, 100%, 85%);
+}
+
+.bck-secondaire-100 {
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-secondaire-200 {
+  color: hsl(40, 100%, 50%);
+}
+
+.bck-secondaire-200 {
+  background-color: hsl(40, 100%, 50%);
+}
+
+.clr-secondaire-300 {
+  color: hsl(40, 100%, 30%);
+}
+
+.bck-secondaire-300 {
+  background-color: hsl(40, 100%, 30%);
+}
+
+.clr-secondaire-400 {
+  color: hsl(40, 100%, 15%);
+}
+
+.bck-secondaire-400 {
+  background-color: hsl(40, 100%, 15%);
+}
+
+.clr-ternaire-100 {
+  color: hsl(10, 100%, 85%);
+}
+
+.bck-ternaire-100 {
+  background-color: hsl(10, 100%, 85%);
+}
+
+.clr-ternaire-200 {
+  color: hsl(10, 100%, 50%);
+}
+
+.bck-ternaire-200 {
+  background-color: hsl(10, 100%, 50%);
+}
+
+.clr-ternaire-300 {
+  color: hsl(10, 100%, 30%);
+}
+
+.bck-ternaire-300 {
+  background-color: hsl(10, 100%, 30%);
+}
+
+.clr-ternaire-400 {
+  color: hsl(10, 100%, 15%);
+}
+
+.bck-ternaire-400 {
+  background-color: hsl(10, 100%, 15%);
+}
+
+.clr-vert-100 {
+  color: hsl(70, 100%, 85%);
+}
+
+.bck-vert-100 {
+  background-color: hsl(70, 100%, 85%);
+}
+
+.clr-vert-200 {
+  color: hsl(70, 100%, 50%);
+}
+
+.bck-vert-200 {
+  background-color: hsl(70, 100%, 50%);
+}
+
+.clr-vert-300 {
+  color: hsl(70, 100%, 30%);
+}
+
+.bck-vert-300 {
+  background-color: hsl(70, 100%, 30%);
+}
+
+.clr-vert-400 {
+  color: hsl(70, 100%, 15%);
+}
+
+.bck-vert-400 {
+  background-color: hsl(70, 100%, 15%);
+}
+
+.clr-agencement-primaire {
+  color: hsl(220, 100%, 15%);
+  background-image: linear-gradient(90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
+}
+
+.clr-agencement-secondaire {
+  color: hsl(40, 100%, 15%);
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-agencement-ternaire {
+  color: hsl(10, 100%, 15%);
+  background-color: hsl(10, 100%, 85%);
+}
+
+.clr-agencement-vert {
+  color: hsl(70, 100%, 15%);
+  background-color: hsl(70, 100%, 85%);
+}
+
 .bgc-text {
   background-color: rgba(255, 255, 255, 0.01);
   padding: 15px 20px;
@@ -202,9 +354,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0.23;
-  background: linear-gradient(to bottom, var(--couleur-arriere-entete), var(--couleur-arriere-footer)), url(https://grainy-gradients.vercel.app/noise.svg);
-  z-index: 10;
+  opacity: 0.3;
+  background: linear-gradient(to right, var(--couleur-arriere-entete), var(--couleur-arriere-footer)), url(https://grainy-gradients.vercel.app/noise.svg);
+  z-index: 1000;
   pointer-events: none;
 }
 
@@ -232,17 +384,21 @@ body {
 }
 
 #entete {
-  background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
   position: relative;
 }
 
 #accueil {
-  background-color: var(--couleur-arriere-acceuil);
   color: var(--couleur-acceuil);
   height: fit-content;
   padding-bottom: 6vh;
   padding-top: 60px;
+}
+
+.accueil__section h2 {
+  margin: 0px;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .accueil__section h2 ul {
@@ -258,8 +414,11 @@ body {
   color: var(--couleur-acceuil);
 }
 
+.nb_post {
+  margin-left: 30px;
+}
+
 #galerie {
-  background: linear-gradient(180deg, var(--couleur-arriere-acceuil), var(--couleur-arriere-evenement));
   color: var(--couleur-galerie);
   position: relative;
   z-index: 1;
@@ -280,10 +439,11 @@ body {
 
 #diaporama-aventure {
   width: 100%;
-  height: 700px;
+  height: 500px;
   border-radius: 15px;
   transform: skew(-10deg);
   background: none;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   -webkit-animation-name: diapo-aventure;
   -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
@@ -292,17 +452,19 @@ body {
 }
 @media screen and (max-width: 1000px) {
   #diaporama-aventure {
-    height: 400px;
-    width: 100%;
+    height: 40vh;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
 #diaporama-sport {
   width: 100%;
-  height: 700px;
+  height: 500px;
   border-radius: 15px;
   transform: skew(-10deg);
   background: none;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   -webkit-animation-name: diapo-sport;
   -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
@@ -311,17 +473,19 @@ body {
 }
 @media screen and (max-width: 1000px) {
   #diaporama-sport {
-    height: 400px;
-    width: 100%;
+    height: 40vh;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
 #diaporama-pliene-nature {
   width: 100%;
-  height: 700px;
+  height: 500px;
   border-radius: 15px;
   transform: skew(-10deg);
   background: none;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   -webkit-animation-name: diapo-pliene-nature;
   -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
@@ -330,20 +494,24 @@ body {
 }
 @media screen and (max-width: 1000px) {
   #diaporama-pliene-nature {
-    height: 400px;
-    width: 100%;
+    height: 40vh;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
 #evenement {
-  background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);
   position: relative;
 }
 
 #footer {
-  background-color: var(--couleur-arriere-footer);
-  color: var(--couleur-footer);
+  background-color: hsl(220, 100%, 15%);
+  color: var(--couleur-accent);
+}
+
+.footer__section h2 {
+  text-shadow: 2px 2px var(--couleur-footer);
 }
 
 .groupe-info {
@@ -384,6 +552,9 @@ blockquote p::first-letter {
   background-repeat: no-repeat;
   background-position: 100% 50%;
   background-size: 100%;
+  height: 70vh;
+  width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .entete__header span {
@@ -456,13 +627,13 @@ header img:hover {
 }
 
 .sociaux > a > svg {
-  fill: var(--couleur-footer);
+  fill: var(--couleur-accent);
   transform: scale(1);
   transition: transform 0.2s, fill 0.2s;
 }
 
 .sociaux > a > svg:hover {
-  fill: var(--couleur-accent);
+  fill: var(--couleur-arriere-acceuil);
   transform: scale(1.3);
 }
 
@@ -472,6 +643,10 @@ header img:hover {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 3vw;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 50px;
+  margin-top: 25px;
 }
 
 .carte {
@@ -479,7 +654,6 @@ header img:hover {
   flex-direction: column;
   justify-content: space-between;
   flex: 0 1 252.5px;
-  background-color: var(--couleur-arriere-footer);
   max-width: 20vw;
   min-width: 15vw;
   margin-left: 5px;
@@ -560,7 +734,7 @@ header img:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: var(--couleur-arriere-footer);
+  background-color: hsl(220, 100%, 15%);
   margin: 0;
   padding: 10px;
   padding-top: 100px;
@@ -694,42 +868,42 @@ header img:hover {
 @keyframes diapo-aventure {
   0% {
     background-image: url("images/aventure/escalade.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   20% {
     background-image: url("images/aventure/kayak.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   40% {
     background-image: url("images/aventure/montagne.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   60% {
     background-image: url("images/aventure/parachute.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   80% {
     background-image: url("images/aventure/train.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   100% {
     background-image: url("images/aventure/escalade.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
@@ -738,42 +912,42 @@ header img:hover {
 @keyframes diapo-sport {
   0% {
     background-image: url("images/sport/velo.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   20% {
     background-image: url("images/sport/natation.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   40% {
     background-image: url("images/sport/ski.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   60% {
     background-image: url("images/sport/basket.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   80% {
     background-image: url("images/sport/surf.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   100% {
     background-image: url("images/sport/velo.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
@@ -782,42 +956,42 @@ header img:hover {
 @keyframes diapo-pliene-nature {
   0% {
     background-image: url("images/pliene_nature/arbres.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   20% {
     background-image: url("images/pliene_nature/lac.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   40% {
     background-image: url("images/pliene_nature/montagneNeige.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   60% {
     background-image: url("images/pliene_nature/ocean.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   80% {
     background-image: url("images/pliene_nature/route.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
   100% {
     background-image: url("images/pliene_nature/arbres.jpg");
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;

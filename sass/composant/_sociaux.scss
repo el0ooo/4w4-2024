@@ -5,12 +5,12 @@
 }
 
 .sociaux > a > svg{
-    fill: var(--couleur-footer);
+    fill: var(--couleur-accent);
     transform: scale(1);
     transition: transform 0.2s, fill 0.2s;
 }
 
 .sociaux > a > svg:hover{
-    fill: var(--couleur-accent);
+    fill: var(--couleur-arriere-acceuil);
     transform: scale(1.3);
 }

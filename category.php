@@ -1,14 +1,15 @@
 <?php  /*modele de base index.php*/
     get_header();
-
+    $_nbPost = $wp_query->found_posts;
 ?>
     <div id="accueil" class="global">
         <section class="accueil__section">
             <h2><?php the_category();?></h2>
+            <h5 class="nb_post">(<?php echo $_nbPost;?>)</h5>
             <div class="section__cours">
                 <?php if(have_posts()):
                     while(have_posts()): the_post(); ?>
-                        <div class="carte"> 
+                        <div class="carte bck-primaire-100"> 
                            <h5><?php the_title(); ?></h5>
                             <p><?php echo wp_trim_words(get_the_content(), 10, "...");?></p>
                             <p class="categori__carte"><?php the_category();?></p>
@@ -19,7 +20,7 @@
             </div>
         </section>
     </div>
-    <div id="galerie" class="global diagonale">
+    <div id="galerie" class="global ">
         <section class="galerie__section">
             <h2>Galerie</h2>
             <h4><?php the_category();?></h4>
