@@ -13,7 +13,7 @@
                 <?php endif;?>
         </section>
     </div>
-    <div id="galerie" class="global diagonale">
+    <div id="galerie" class="global">
         <section class="galerie__section">
             <h2>Galerie</h2>
             <h4>Aventure</h4>

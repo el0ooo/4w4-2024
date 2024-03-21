@@ -11,16 +11,15 @@
                 <a href="https://www.larousse.fr/dictionnaires/francais/inscription/43287">Inscriptions</a>
             </button>
         </section>
-        <?php get_template_part('gabarit/vague');?>
     </div>
-    <div id="accueil" class="global">
+    <div id="accueil" class="global clr-agencement-primaire">
         <section class="accueil__section">
             <h2>Destinations populaires</h2>
             <div class="section__cours">
                 <?php if(have_posts()):
                         while(have_posts()): the_post();      
                 ?>
-                        <div class="carte"> 
+                        <div class="carte bck-primaire-100"> 
                             <h5><?php the_title(); ?></h5>
                             <p><?php echo wp_trim_words(get_the_content(), 10, "...");?></p>
                             <p class="categori__carte"><?php the_category();?></p>
@@ -31,7 +30,7 @@
             </div>
         </section>
     </div>
-    <div id="galerie" class="global diagonale">
+    <div id="galerie" class="global">
         <section class="galerie__section">
             <h2>Galerie</h2>
             <h4>Photos de voyage</h4>
@@ -56,7 +55,6 @@
                 <a href="https://github.com/el0ooo">Vêtements</a>
             </button>
         </section>
-        <?php get_template_part('gabarit/vague');?>
     </div>
 
     <?php 

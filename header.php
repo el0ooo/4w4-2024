@@ -9,7 +9,7 @@
     <!-- <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css"> -->
 </head>
-<body>
+<body class="clr-agencement-primaire">
     <div id="menu">
         <header class="entete__menu">
             <input id="chk_burger" type="checkbox">
