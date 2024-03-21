@@ -2,6 +2,9 @@
 ### Réaliser par Yuri Eloi Chayer
 #### Groupe 2
 
+## Description du TP1 : 
+Mon TP1 est un site internet pour un club de voyage possedant plusieurs categories comme sport et pleine nature. Dans ces catégories, ce trouve des destinations de voyage comme le Japon ou le Canada. Nous pouvons obtenir de l'information sur ces destinations pour nous motiver à voyager. Dans la section galerie, nous trouvons un caroussel d'image représentant une catégorie. Ce caroussel change d'image à chaque fois que nous arrivons sur le site. Le site a un style retro avec du grain et ses couleurs.
+
 #### Objectifs du TP1:
 Créer un site web pour un club de voyage qui permettra de mettre en valeur les differentes destinations de voyage.
 -	Réaliser un site WordPress pour un club de voyage. Le club offre à ses membres des voyages vers des destinations originales partout dans le monde.
@@ -63,6 +66,6 @@ La pagination globale « layout » du site et les différentes zones de la page:
 
 3.	Design général de la page et organisation de la programmation Sass, PHP. Organisation des menus, bouton burger pour afficher le menu principal pour les petits écrans. Adaptabilité générale du site. En Sass utilisation du mapping de couleurs. (5 points)
 
-# URL
+## URL
 ### lien vers ma page github : https://el0ooo.github.io/4w4-2024/
 ### lien vers le serveur distant WHC.ca : 
