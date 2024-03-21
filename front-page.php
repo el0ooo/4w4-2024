@@ -14,6 +14,21 @@
     </div>
     <div id="accueil" class="global clr-agencement-primaire">
         <section class="accueil__section">
+            <h2>Catégories de voyage</h2>
+            <div class="section__cours">
+                <?php
+                    foreach(get_categories() as $category_id):
+                        $cat_nom = $category_id->name;
+                        $cat_description = wp_trim_words($category_id->description, 10, "...");
+                        $cat_lien = get_category_link($category_id->term_id);
+                ?>
+                    <div class="carte bck-primaire-100">
+                        <h5><?php echo $cat_nom;?></h5>
+                        <p><?php echo $cat_description;?></p>
+                        <p><a href="<?php echo $cat_lien;?>">Voir la catégorie</a></p>
+                    </div>
+               <?php endforeach;?>
+            </div>
             <h2>Destinations populaires</h2>
             <div class="section__cours">
                 <?php if(have_posts()):

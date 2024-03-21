@@ -645,6 +645,8 @@ header img:hover {
   gap: 3vw;
   margin-left: 25px;
   margin-right: 25px;
+  margin-bottom: 50px;
+  margin-top: 25px;
 }
 
 .carte {
