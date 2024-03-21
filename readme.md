@@ -1,35 +1,71 @@
-# Exercice 2 - club de voyage #
+# TP1 - club de voyage #
 ### Réaliser par Yuri Eloi Chayer
 #### Groupe 2
 
 ## Description du TP1 : 
 Mon TP1 est un site internet pour un club de voyage possedant plusieurs categories comme sport et pleine nature. Dans ces catégories, ce trouve des destinations de voyage comme le Japon ou le Canada. Nous pouvons obtenir de l'information sur ces destinations pour nous motiver à voyager. Dans la section galerie, nous trouvons un caroussel d'image représentant une catégorie. Ce caroussel change d'image à chaque fois que nous arrivons sur le site. Le site a un style retro avec du grain et ses couleurs.
 
-#### Objectifs de l'exercice 2:
- - Compléter l'utilisation du mapping de couleurs avec boucle et mixin (1 point)
+#### Objectifs du TP1:
+Créer un site web pour un club de voyage qui permettra de mettre en valeur les differentes destinations de voyage.
+-	Réaliser un site WordPress pour un club de voyage. Le club offre à ses membres des voyages vers des destinations originales partout dans le monde.
+-	Chaque destination est catégorisée pour permettre aux membres de se renseigner de façon spécifique selon leur gout.
+-	Le design général permettra de mettre en valeur les offres de voyages réservées à ses membres.
+-	Déployer votre projet sur le serveur Web hosting Canada.
 
- - Amélioration de la page d'accueil (front-page.php) (1 point)
-    Changer le titre et la description générale du site
-    Chaque destination contient les catégories associées.
-    On voit uniquement les destinations « populaire »
-    Améliorer l'apparence de la liste des catégories
-    Améliorer l'apparence de chacune des cartes
+#### Catégorie de voyage :
+Grandeur du Groupe :
+o	Voyage en groupe
+o	Voyage en petit comité
+o	Voyage en solo
+o	Types de Voyage :
+Type de voyage :
+o	Aventure
+o	Culturel
+o	Repos
+o	Intime
+o	Sportif
+o	Économique
+o	Luxueux
+o	Paysage
+o	Pleine nature
 
- - Afficher des cartes de catégories pour l'ensemble des catégories dans la page d'accueil (2 points)
-    Titre de la catégorie
-    10 premiers mot de la description
-    Un lien permet d'accéder à la liste des destinations de cette catégorie
-    Le nombre d'article pour cette catégorie
+#### Ce projet vous permettra d'améliorer globalement votre thème existant en y intégrant les éléments suivants: 
+•	Un pied de page
+•	Un design de thème amélioré avec Sass et PHP
+•	Amélioration de l'affichage produit par les modèles:
+o	front-page.php
+o	single.php
+o	category.php
+o	search.php
+o	header.php
+o	footer.php
+•	Une mise en page entièrement adaptative
 
- - Créer un readme (1 point)
-    Créer une github-page : mettre à jour index.htm
-    Ajouter l'adresse de la github-page dans votre readme.
-    Le non de l'auteur
-    Courte description de votre tp1
+#### Déroulement du projet
+Les « commits » seront poussés dans le dépôt 4w4 de votre GitHub dans la branche tp1.
+L'ensemble des commits devra s'étaler progressivement à partir de la journée de remise du devis jusqu'à la remise finale du TP.
+Un minimum de 30 commits pour le thème permettra d'évaluer l'évolution de votre projet.
+Le serveur « WHC » Web hosting canada
+Utilisez votre compte «WHC » pour déployer la version finale de votre site.
+Gardez votre environnement de fichiers « WHC » le plus simple possible en retirant tous les éléments non nécessaires.
+________________________________________
+Le pied de page: footer.php
+La zone footer permettra d'intégrer des liens conçus à partir de la fonctionnalité «menu» de WordPress.
+Design amélioré
+La pagination globale « layout » du site et les différentes zones de la page: l'entête, le footer et la partie principale « main » de la page devront être bien structurés, clairs, originaux et entièrement adaptatifs.
+
+#### Barème de correction sur 20 points
+1.	Organisation des commits sur GitHub minimum 30 commits pour le thème (5 points)
+•	Minimum de 20 commits étalés sur toute la durée du TP
+•	Messages clairs, spécifiques, préfixés et non redondants
+•	Une branche tp1
+•	Déploiement de votre site sur « WHC »
+•	Un readme.md pour le thème: auteur, titre du projet, description et lien vers votre site sur l’hébergeur « WHC »
+
+2.	Organisation de l'entête, footer et partie principale. Qualité du design et de l'intégration des différents éléments de contenu. Notamment, les articles de destinations de voyage s'affichent de façon optimale. Les modèles: header.php, footer.php, category.php, front-page.php et single.php sont bien structurés et affichent l'information prévue. (10 points)
+
+3.	Design général de la page et organisation de la programmation Sass, PHP. Organisation des menus, bouton burger pour afficher le menu principal pour les petits écrans. Adaptabilité générale du site. En Sass utilisation du mapping de couleurs. (5 points)
 
 ## URL
 ### lien vers ma page github : https://el0ooo.github.io/4w4-2024/
 ### lien vers le serveur distant WHC.ca : 
-
-## Description du TP1 : 
-Mon TP1 est un site internet pour un club de voyage possedant plusieurs categories comme sport et pleine nature. Dans ces catégories, ce trouve des destinations de voyage comme le Japon ou le Canada. Nous pouvons obtenir de l'information sur ces destinations pour nous motiver à voyager. Dans la section galerie, nous trouvons un caroussel d'image représentant une catégorie. Ce caroussel change d'image à chaque fois que nous arrivons sur le site. Le site a un style retro avec du grain et ses couleurs.
