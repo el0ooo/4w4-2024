@@ -25,6 +25,7 @@
                     <div class="carte bck-primaire-100">
                         <h5><?php echo $cat_nom;?></h5>
                         <p><?php echo $cat_description;?></p>
+                        <p><?php echo $category_id->count;?> destinations a découvrir</p>
                         <p><a href="<?php echo $cat_lien;?>">Voir la catégorie</a></p>
                     </div>
                <?php endforeach;?>
