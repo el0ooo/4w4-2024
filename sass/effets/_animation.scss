@@ -132,3 +132,48 @@
         border-radius: 15px;
     }
 }
+
+@keyframes diapo-croisiere{
+    0%{
+        background-image: url("images/croisiere/cotebateau.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    20%{
+        background-image: url("images/croisiere/grosBateau.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    40%{
+        background-image: url("images/croisiere/grosBateau2.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    60%{
+        background-image: url("images/croisiere/ville.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    80%{
+        background-image: url("images/croisiere/voilier.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    100%{
+        background-image: url("images/croisiere/cotebateau.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+}

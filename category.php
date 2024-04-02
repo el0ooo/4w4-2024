@@ -1,10 +1,11 @@
 <?php  /*modele de base index.php*/
     get_header();
     $_nbPost = $wp_query->found_posts;
+    $_nomCategori = get_the_category()[0]->name;
 ?>
     <div id="accueil" class="global">
         <section class="accueil__section">
-            <h2><?php get_categories()[1];?></h2>
+            <h2><?php echo $_nomCategori;?></h2>
             <h5 class="nb_post">(<?php echo $_nbPost;?>)</h5>
             <div class="section__cours">
                 <?php if(have_posts()):
@@ -24,7 +25,15 @@
         <section class="galerie__section">
             <h2>Galerie</h2>
             <!-- vouloir faire en sorte d'afficher un diaporama avec des images de la categorie active -->
-            <div id="diaporama-aventure"></div>
+            <?php if($_nomCategori == "Aventure"){?>
+                <div id="diaporama-aventure"></div>
+            <?php } else if($_nomCategori == "Sport"){?>
+                <div id="diaporama-sport"></div>
+            <?php } else if($_nomCategori == "Pleine nature"){?>
+                <div id="diaporama-pliene-nature"></div>
+            <?php } else if($_nomCategori == "croisière"){?>
+                <div id="diaporama-croisiere"></div>
+            <?php } ?>
         </section>
     </div>
 
