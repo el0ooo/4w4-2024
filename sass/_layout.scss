@@ -80,6 +80,10 @@ body {
 }
 
 
+#single__contenu{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
 #galerie{
     //background: linear-gradient(180deg, var(--couleur-arriere-acceuil), var(--couleur-arriere-evenement));
     color: var(--couleur-galerie);

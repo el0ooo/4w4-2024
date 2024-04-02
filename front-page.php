@@ -15,7 +15,7 @@
     <div id="accueil" class="global clr-agencement-primaire">
         <section class="accueil__section">
             <h2>Catégories de voyage</h2>
-            <div class="section__cours">
+            <div id="categorie__section" class="section__cours">
                 <?php
                     foreach(get_categories() as $category_id):
                         $cat_nom = $category_id->name;

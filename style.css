@@ -418,6 +418,10 @@ body {
   margin-left: 30px;
 }
 
+#single__contenu {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
 #galerie {
   color: var(--couleur-galerie);
   position: relative;
@@ -779,49 +783,49 @@ header img:hover {
 }
 
 /*pour les cateagories*/
-.section__cours > div.carte:nth-of-type(1) {
+#categorie__section > div.carte:nth-of-type(1) {
   background-image: url("images/frontPage/nuitEtoile.jpg");
   background-size: 110%;
   background-position: center;
 }
 
-.section__cours > div.carte:nth-of-type(2) {
+#categorie__section > div.carte:nth-of-type(2) {
   background-image: url("images/frontPage/bateauCroisiere.jpg");
   background-size: 110%;
   background-position: center;
 }
 
-.section__cours > div.carte:nth-of-type(3) {
+#categorie__section > div.carte:nth-of-type(3) {
   background-image: url("images/frontPage/satuesCulture.jpg");
   background-size: 110%;
   background-position: center;
 }
 
-.section__cours > div.carte:nth-of-type(4) {
+#categorie__section > div.carte:nth-of-type(4) {
   background-image: url("images/frontPage/montagneAventure.jpg");
   background-size: 110%;
   background-position: center;
 }
 
-.section__cours > div.carte:nth-of-type(5) {
+#categorie__section > div.carte:nth-of-type(5) {
   background-image: url("images/frontPage/populaire.jpg");
   background-size: 90%;
   background-position: center;
 }
 
-.section__cours > div.carte:nth-of-type(6) {
+#categorie__section > div.carte:nth-of-type(6) {
   background-image: url("images/frontPage/piscine.jpg");
   background-size: 200%;
   background-position: center;
 }
 
-.section__cours > div.carte:nth-of-type(7) {
+#categorie__section > div.carte:nth-of-type(7) {
   background-image: url("images/frontPage/surfSpor.jpg");
   background-size: 200%;
   background-position: center;
 }
 
-.section__cours > div.carte:nth-of-type(8) {
+#categorie__section > div.carte:nth-of-type(8) {
   background-image: url("images/frontPage/tourZen.jpg");
   background-size: 110%;
   background-position: center;
