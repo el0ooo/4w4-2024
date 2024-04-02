@@ -4,7 +4,7 @@
 ?>
     <div id="accueil" class="global">
         <section class="accueil__section">
-            <h2><?php the_category();?></h2>
+            <h2><?php get_categories()[1];?></h2>
             <h5 class="nb_post">(<?php echo $_nbPost;?>)</h5>
             <div class="section__cours">
                 <?php if(have_posts()):
@@ -23,7 +23,6 @@
     <div id="galerie" class="global ">
         <section class="galerie__section">
             <h2>Galerie</h2>
-            <h4><?php the_category();?></h4>
             <!-- vouloir faire en sorte d'afficher un diaporama avec des images de la categorie active -->
             <div id="diaporama-aventure"></div>
         </section>

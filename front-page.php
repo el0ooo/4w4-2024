@@ -31,7 +31,7 @@
                <?php endforeach;?>
             </div>
             <h2>Destinations populaires</h2>
-            <div class="section__cours">
+            <div id="populaire" class="section__cours">
                 <?php if(have_posts()):
                         while(have_posts()): the_post();      
                 ?>
@@ -66,10 +66,6 @@
                     <a href="https://via-ferrata-dolomites.com/">Via ferrata dans les dolomites</a>
                 </details>
             </div>
-            <h5>Vente de vetements</h5>
-            <button>
-                <a href="https://github.com/el0ooo">Vêtements</a>
-            </button>
         </section>
     </div>
 

@@ -51,6 +51,36 @@
 }
 
 
+#populaire > div.carte:nth-of-type(1){
+    background-image: url("images/frontPage/banff.jpg");
+    background-size: 140%;
+    background-position: center;
+}
+
+#populaire > div.carte:nth-of-type(2){
+    background-image: url("images/frontPage/costaRica.jpg");
+    background-size: 140%;
+    background-position: center;
+}
+
+#populaire > div.carte:nth-of-type(3){
+    background-image: url("images/frontPage/kyoto.jpg");
+    background-size: 300%;
+    background-position: right;
+}
+
+#populaire > div.carte:nth-of-type(4){
+    background-image: url("images/frontPage/fuji.jpg");
+    background-size: 170%;
+    background-position: center;
+}
+
+#populaire > div.carte:nth-of-type(5){
+    background-image: url("images/frontPage/whislter.jpg");
+    background-size: 110%;
+    background-position: center;
+}
+
 @media screen and (max-width: 1000px){
     .section__cours{
         gap: 5vw;
@@ -63,3 +93,4 @@
         margin-left: 0px;
     }
 }
+
