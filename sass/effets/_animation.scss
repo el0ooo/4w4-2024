@@ -177,3 +177,138 @@
         border-radius: 15px;
     }
 }
+
+@keyframes diapo-culture{
+    0%{
+        background-image: url("images/culture/feu.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    20%{
+        background-image: url("images/culture/japon.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    40%{
+        background-image: url("images/culture/mort.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    60%{
+        background-image: url("images/culture/nyc.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    80%{
+        background-image: url("images/culture/venise.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    100%{
+        background-image: url("images/culture/feu.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+}
+
+@keyframes diapo-repos{
+    0%{
+        background-image: url("images/repos/bateauRepos.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    20%{
+        background-image: url("images/repos/gazon.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    40%{
+        background-image: url("images/repos/pied.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    60%{
+        background-image: url("images/repos/quai.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    80%{
+        background-image: url("images/repos/singe.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    100%{
+        background-image: url("images/repos/bateauRepos.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+}
+
+@keyframes diapo-zen{
+    0%{
+        background-image: url("images/zen/fleur.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    20%{
+        background-image: url("images/zen/maison.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    40%{
+        background-image: url("images/zen/roche.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    60%{
+        background-image: url("images/zen/temple.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    80%{
+        background-image: url("images/zen/tori.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    100%{
+        background-image: url("images/zen/fleur.jpg");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+}

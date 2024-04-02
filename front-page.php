@@ -1,6 +1,6 @@
 <?php  /*modele de base index.php*/
     get_header();
-    $diapoAleatoire = rand(1, 4);
+    $diapoAleatoire = rand(1, 7);
 ?>
     <div id="entete" class="global">
         <section class="entete__header">
@@ -50,7 +50,8 @@
         <section class="galerie__section">
             <h2>Galerie</h2>
             <h4>Photos de voyage</h4>
-            <div id="<?php if($diapoAleatoire == 1):?>diaporama-pliene-nature<?php endif; ?><?php if($diapoAleatoire == 2):?>diaporama-sport<?php endif; ?><?php if($diapoAleatoire == 3):?>diaporama-aventure<?php endif; ?><?php if($diapoAleatoire == 4):?>diaporama-croisiere<?php endif; ?>"></div>
+            <div id="<?php if($diapoAleatoire == 1):?>diaporama-pliene-nature<?php endif; ?><?php if($diapoAleatoire == 2):?>diaporama-sport<?php endif; ?><?php if($diapoAleatoire == 3):?>diaporama-aventure<?php endif; ?><?php if($diapoAleatoire == 4):?>diaporama-croisiere<?php endif; ?><?php if($diapoAleatoire == 5):?>diaporama-culture<?php endif; ?><?php if($diapoAleatoire == 6):?>diaporama-repos<?php endif; ?><?php if($diapoAleatoire == 7):?>diaporama-zen<?php endif; ?>">
+            </div>
         </section>
     </div>
     <div id="evenement" class="global">

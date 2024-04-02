@@ -1,12 +1,10 @@
 <?php  /*modele de base index.php*/
     get_header();
-    $_nbPost = $wp_query->found_posts;
     $_nomCategori = get_the_category()[0]->name;
 ?>
     <div id="accueil" class="global">
         <section class="accueil__section">
             <h2><?php echo $_nomCategori;?></h2>
-            <h5 class="nb_post">(<?php echo $_nbPost;?>)</h5>
             <div class="section__cours">
                 <?php if(have_posts()):
                     while(have_posts()): the_post(); ?>
@@ -33,7 +31,13 @@
                 <div id="diaporama-pliene-nature"></div>
             <?php } else if($_nomCategori == "croisière"){?>
                 <div id="diaporama-croisiere"></div>
-            <?php } ?>
+            <?php } else if($_nomCategori == "Culturel"){?>
+                <div id="diaporama-culture"></div>
+            <?php } else if($_nomCategori == "Repos"){?>
+                <div id="diaporama-repos"></div>
+            <?php } else if($_nomCategori == "Zen"){?>
+                <div id="diaporama-zen"></div>
+            <?php }?>
         </section>
     </div>
 
