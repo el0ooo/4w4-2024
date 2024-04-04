@@ -26,3 +26,13 @@ button, input{
 .entete__button{
     background-image: linear-gradient(0deg, var(--couleur-arriere-galerie), var(--couleur-arriere-galerie));
 }
+
+.reservation__button{
+    position: relative;
+    left: 90%;
+    right: 0;
+    @media screen and (max-width: 1000px){
+        left: 70%;
+        
+    }
+}

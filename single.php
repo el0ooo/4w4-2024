@@ -44,7 +44,7 @@
             </div>
         </section>
     </div>
-    <div class="global">
+    <div id="reservation" class="global">
         <section>
             <h2>Réserver</h2>
             <p>Veillez choisir une date pour votre voyage.</p>
@@ -99,7 +99,7 @@
                     <li><span>31</span></li>
                 </ul>
             </div>
-            <button class="entete__button">
+            <button class="entete__button reservation__button">
                 <a href="">Réservation</a>
             </button>
         </section>
