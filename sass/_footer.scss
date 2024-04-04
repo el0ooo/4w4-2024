@@ -6,16 +6,28 @@
 }
 
 .liens > .menu-principal-container {
-    width: 100%;
+    width: 90vw;
+    @media screen and (max-width:1000px){
+        transform: translate(0px);
+        height: fit-content;
+    }
 }
 
 .liens > .menu-principal-container > #menu-principal-1{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer__section > #searchform{
     transform: scale(1.3);
     top: -10px;
     left: 0vw;
+    @media screen and (max-width:1000px){
+        transform: scale(1.1);
+        top: 0px;
+        left: -3vw;
+    }
 }
