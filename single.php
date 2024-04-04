@@ -1,6 +1,9 @@
 <?php  /*modele de base index.php*/
     get_header();
-    $_nomCategori = get_the_category()[0]->name;
+    $category = get_queried_object();
+    if($category){
+        $_nomCategori = $category->name;
+    }
 ?>
     <div id="accueil" class="global">
         <section id="single__contenu" class="accueil__section bck-primaire-100">
@@ -15,7 +18,7 @@
                 <?php endif;?>
         </section>
     </div>
-    <?php if($_nomCategori != "Populaire"){?>
+    <?php if($_nomCategori != "Populaire"|| $_nomCategori != "voyage en famille" || $_nomCategori != "Voyage en groupe" || $_nomCategori != "voyage solo"){?>
     <div id="galerie" class="global">
         <section class="galerie__section">
             <h2>Galerie</h2>

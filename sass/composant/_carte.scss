@@ -94,6 +94,24 @@
 }
 
 #categorie__section > div.carte:nth-of-type(8){
+    background-image: url("images/frontPage/famille.jpg");
+    background-size: 110%;
+    background-position: center;
+}
+
+#categorie__section > div.carte:nth-of-type(9){
+    background-image: url("images/frontPage/groupe.jpg");
+    background-size: 110%;
+    background-position: center;
+}
+
+#categorie__section > div.carte:nth-of-type(10){
+    background-image: url("images/frontPage/solo.jpg");
+    background-size: 110%;
+    background-position: center;
+}
+
+#categorie__section > div.carte:nth-of-type(11){
     background-image: url("images/frontPage/tourZen.jpg");
     background-size: 110%;
     background-position: center;
