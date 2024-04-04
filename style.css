@@ -442,7 +442,8 @@ body {
 }
 
 #diaporama-aventure {
-  width: 100%;
+  display: block;
+  width: 1200px;
   height: 500px;
   border-radius: 15px;
   transform: skew(-10deg);
@@ -456,15 +457,16 @@ body {
 }
 @media screen and (max-width: 1000px) {
   #diaporama-aventure {
-    height: 40vh;
-    width: 80%;
+    height: 200px;
+    width: 500px;
     margin: 0 auto;
     box-shadow: none;
   }
 }
 
 #diaporama-sport {
-  width: 100%;
+  display: block;
+  width: 1200px;
   height: 500px;
   border-radius: 15px;
   transform: skew(-10deg);
@@ -478,15 +480,16 @@ body {
 }
 @media screen and (max-width: 1000px) {
   #diaporama-sport {
-    height: 40vh;
-    width: 80%;
+    height: 200px;
+    width: 500px;
     margin: 0 auto;
     box-shadow: none;
   }
 }
 
 #diaporama-croisiere {
-  width: 100%;
+  display: block;
+  width: 1200px;
   height: 500px;
   border-radius: 15px;
   transform: skew(-10deg);
@@ -500,15 +503,16 @@ body {
 }
 @media screen and (max-width: 1000px) {
   #diaporama-croisiere {
-    height: 40vh;
-    width: 80%;
+    height: 200px;
+    width: 500px;
     margin: 0 auto;
     box-shadow: none;
   }
 }
 
 #diaporama-pliene-nature {
-  width: 100%;
+  display: block;
+  width: 1200px;
   height: 500px;
   border-radius: 15px;
   transform: skew(-10deg);
@@ -522,15 +526,16 @@ body {
 }
 @media screen and (max-width: 1000px) {
   #diaporama-pliene-nature {
-    height: 40vh;
-    width: 80%;
+    height: 200px;
+    width: 500px;
     margin: 0 auto;
     box-shadow: none;
   }
 }
 
 #diaporama-culture {
-  width: 100%;
+  display: block;
+  width: 1200px;
   height: 500px;
   border-radius: 15px;
   transform: skew(-10deg);
@@ -544,15 +549,16 @@ body {
 }
 @media screen and (max-width: 1000px) {
   #diaporama-culture {
-    height: 40vh;
-    width: 80%;
+    height: 200px;
+    width: 500px;
     margin: 0 auto;
     box-shadow: none;
   }
 }
 
 #diaporama-repos {
-  width: 100%;
+  display: block;
+  width: 1200px;
   height: 500px;
   border-radius: 15px;
   transform: skew(-10deg);
@@ -566,15 +572,16 @@ body {
 }
 @media screen and (max-width: 1000px) {
   #diaporama-repos {
-    height: 40vh;
-    width: 80%;
+    height: 200px;
+    width: 500px;
     margin: 0 auto;
     box-shadow: none;
   }
 }
 
 #diaporama-zen {
-  width: 100%;
+  display: block;
+  width: 1200px;
   height: 500px;
   border-radius: 15px;
   transform: skew(-10deg);
@@ -588,8 +595,8 @@ body {
 }
 @media screen and (max-width: 1000px) {
   #diaporama-zen {
-    height: 40vh;
-    width: 80%;
+    height: 200px;
+    width: 500px;
     margin: 0 auto;
     box-shadow: none;
   }
@@ -997,6 +1004,109 @@ header img:hover {
 #chk_burger:checked ~ .menu-principal-container {
   transform: translateX(0%);
   transition: transform 0.3s ease-in-out;
+}
+
+.calendrier {
+  width: 80vw;
+  transform: skew(-10deg);
+  padding: var(--padding);
+  border-radius: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: hsl(220, 100%, 15%);
+  text-align: center;
+  border-radius: 15px;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 15px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+  border-radius: 15px;
+  width: 100%;
+  padding: 10px 25px;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+  border-radius: 15px;
+  width: 100%;
+  padding: 10px 25px;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #777;
+  transition: color 0.3s;
+}
+.days li :hover {
+  color: hsl(220, 100%, 15%);
+  transform: scale(1.2);
+}
+
+.days li span {
+  font-size: medium;
+  transition: font-size 0.3s;
+}
+.days li span :hover {
+  font-size: larger;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: hsl(220, 100%, 15%);
+  color: var(--couleur-accent) !important;
+  border-radius: 15px;
 }
 
 /* ----------------------------------------------------- */

@@ -105,7 +105,8 @@ body {
 }
 
 #diaporama-aventure{
-    width: 100%;
+    display: block;
+    width: 1200px;
     height: 500px;
     border-radius: 15px;
     transform: skew(-10deg);
@@ -118,15 +119,16 @@ body {
     -webkit-animation-timing-function: linear;
 
     @media  screen and (max-width: 1000px){
-        height: 40vh;
-        width: 80%;
+        height: 200px;
+        width: 500px;
         margin: 0 auto;
         box-shadow: none;
     }
 }
 
 #diaporama-sport{
-    width: 100%;
+    display: block;
+    width: 1200px;
     height: 500px;
     border-radius: 15px;
     transform: skew(-10deg);
@@ -139,15 +141,16 @@ body {
     -webkit-animation-timing-function: linear;
 
     @media  screen and (max-width: 1000px){
-        height: 40vh;
-        width: 80%;
+        height: 200px;
+        width: 500px;
         margin: 0 auto;
         box-shadow: none;
     }
 }
 
 #diaporama-croisiere{
-    width: 100%;
+    display: block;
+    width: 1200px;
     height: 500px;
     border-radius: 15px;
     transform: skew(-10deg);
@@ -160,15 +163,16 @@ body {
     -webkit-animation-timing-function: linear;
 
     @media  screen and (max-width: 1000px){
-        height: 40vh;
-        width: 80%;
+        height: 200px;
+        width: 500px;
         margin: 0 auto;
         box-shadow: none;
     }
 }
 
 #diaporama-pliene-nature{
-    width: 100%;
+    display: block;
+    width: 1200px;
     height: 500px;
     border-radius: 15px;
     transform: skew(-10deg);
@@ -181,15 +185,16 @@ body {
     -webkit-animation-timing-function: linear;
 
     @media  screen and (max-width: 1000px){
-        height: 40vh;
-        width: 80%;
+        height: 200px;
+        width: 500px;
         margin: 0 auto;
         box-shadow: none;
     }
 }
 
 #diaporama-culture{
-    width: 100%;
+    display: block;
+    width: 1200px;
     height: 500px;
     border-radius: 15px;
     transform: skew(-10deg);
@@ -202,15 +207,16 @@ body {
     -webkit-animation-timing-function: linear;
 
     @media  screen and (max-width: 1000px){
-        height: 40vh;
-        width: 80%;
+        height: 200px;
+        width: 500px;
         margin: 0 auto;
         box-shadow: none;
     }
 }
 
 #diaporama-repos{
-    width: 100%;
+    display: block;
+    width: 1200px;
     height: 500px;
     border-radius: 15px;
     transform: skew(-10deg);
@@ -223,15 +229,16 @@ body {
     -webkit-animation-timing-function: linear;
 
     @media  screen and (max-width: 1000px){
-        height: 40vh;
-        width: 80%;
+        height: 200px;
+        width: 500px;
         margin: 0 auto;
         box-shadow: none;
     }
 }
 
 #diaporama-zen{
-    width: 100%;
+    display: block;
+    width: 1200px;
     height: 500px;
     border-radius: 15px;
     transform: skew(-10deg);
@@ -244,12 +251,13 @@ body {
     -webkit-animation-timing-function: linear;
 
     @media  screen and (max-width: 1000px){
-        height: 40vh;
-        width: 80%;
+        height: 200px;
+        width: 500px;
         margin: 0 auto;
         box-shadow: none;
     }
 }
+
 
 #evenement {
     //background-color: var(--couleur-arriere-evenement);

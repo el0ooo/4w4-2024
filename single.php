@@ -44,6 +44,66 @@
             </div>
         </section>
     </div>
+    <div class="global">
+        <section>
+            <h2>Réserver</h2>
+            <p>Veillez choisir une date pour votre voyage.</p>
+            <div class="calendrier">
+                <div class="month">
+                    <ul>
+                        <li class="prev">&#10094;</li>
+                        <li class="next">&#10095;</li>
+                        <li>Juillet<br><span style="font-size:18px">2024</span></li>
+                    </ul>
+                </div>
+                <ul class="weekdays">
+                    <li>Lundi</li>
+                    <li>Mardi</li>
+                    <li>Mercredi</li>
+                    <li>Jeudi</li>
+                    <li>Vendredi</li>
+                    <li>Samedi</li>
+                    <li>Dimanche</li>
+                </ul>
+                <ul class="days">
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <li><span>7</span></li>
+                    <li><span>8</span></li>
+                    <li><span>9</span></li>
+                    <li><span>10</span></li>
+                    <li><span>11</span></li>
+                    <li><span>12</span></li>
+                    <li><span>13</span></li>
+                    <li><span>14</span></li>
+                    <li><span>15</span></li>
+                    <li><span>16</span></li>
+                    <li><span>17</span></li>
+                    <li><span>18</span></li>
+                    <li><span>19</span></li>
+                    <li><span class="active">20</span></li>
+                    <li><span>21</span></li>
+                    <li><span>22</span></li>
+                    <li><span>23</span></li>
+                    <li><span>24</span></li>
+                    <li><span>25</span></li>
+                    <li><span>26</span></li>
+                    <li><span>27</span></li>
+                    <li><span>28</span></li>
+                    <li><span>29</span></li>
+                    <li><span>30</span></li>
+                    <li><span>31</span></li>
+                </ul>
+            </div>
+            <button class="entete__button">
+                <a href="">Réservation</a>
+            </button>
+        </section>
+    </div>
 
     <?php 
     // recuperer le fichier footer.php

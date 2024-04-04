@@ -14,6 +14,20 @@
     </div>
     <div id="accueil" class="global clr-agencement-primaire">
         <section class="accueil__section">
+            <h2>Destinations populaires</h2>
+            <div id="populaire" class="section__cours">
+                <?php if(have_posts()):
+                        while(have_posts()): the_post();      
+                ?>
+                        <div class="carte bck-primaire-100"> 
+                            <h5><?php the_title(); ?></h5>
+                            <p><?php echo wp_trim_words(get_the_content(), 10, "...");?></p>
+                            <p class="categori__carte"><?php the_category();?></p>
+                            <p><a href= "<?php echo get_permalink()?>">Voir la suite</a></p>
+                        </div>
+                    <?php endwhile;?>
+                <?php endif;?>
+            </div>
             <h2>Catégories de voyage</h2>
             <div id="categorie__section" class="section__cours">
                 <?php
@@ -30,20 +44,6 @@
                     </div>
                <?php endforeach;?>
             </div>
-            <h2>Destinations populaires</h2>
-            <div id="populaire" class="section__cours">
-                <?php if(have_posts()):
-                        while(have_posts()): the_post();      
-                ?>
-                        <div class="carte bck-primaire-100"> 
-                            <h5><?php the_title(); ?></h5>
-                            <p><?php echo wp_trim_words(get_the_content(), 10, "...");?></p>
-                            <p class="categori__carte"><?php the_category();?></p>
-                            <p><a href= "<?php echo get_permalink()?>">Voir la suite</a></p>
-                        </div>
-                    <?php endwhile;?>
-                <?php endif;?>
-            </div>
         </section>
     </div>
     <div id="galerie" class="global">
@@ -51,21 +51,6 @@
             <h2>Galerie</h2>
             <h4>Photos de voyage</h4>
             <div id="<?php if($diapoAleatoire == 1):?>diaporama-pliene-nature<?php endif; ?><?php if($diapoAleatoire == 2):?>diaporama-sport<?php endif; ?><?php if($diapoAleatoire == 3):?>diaporama-aventure<?php endif; ?><?php if($diapoAleatoire == 4):?>diaporama-croisiere<?php endif; ?><?php if($diapoAleatoire == 5):?>diaporama-culture<?php endif; ?><?php if($diapoAleatoire == 6):?>diaporama-repos<?php endif; ?><?php if($diapoAleatoire == 7):?>diaporama-zen<?php endif; ?>">
-            </div>
-        </section>
-    </div>
-    <div id="evenement" class="global">
-        <section class="evenement__section">
-            <h2>Evenement</h2>
-            <div class="groupe-info">
-                <h5>Via ferrata</h5>
-                <p>Bacon ipsum dolor amet fatback rump hamburger porchetta chicken pork. Tenderloin andouille cow spare ribs, chicken tri-tip meatball bacon flank capicola sirloin pig leberkas. Spare ribs biltong pork, prosciutto sirloin cow pastrami tail turducken. Rump shoulder salami tail.</p>
-                <p>Achalandage<meter optimum="40" high="80" max="100" value="10">10%</meter></p>
-                <details>
-                    <summary>En savoir plus</summary>
-                    <p>Pour plus d'information, visitez le site de la via ferrata</p>
-                    <a href="https://via-ferrata-dolomites.com/">Via ferrata dans les dolomites</a>
-                </details>
             </div>
         </section>
     </div>
