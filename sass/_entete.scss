@@ -45,4 +45,36 @@ header img{
     }
 }
 
+#searchform{
+    position: relative;
+    top: -140px;
+    left: 730px;
+    transform: scale(0.3);
+    z-index: 100000;
+    @media screen and (max-width: 1500px){
+        top: -135px;
+        left: 650px;
+        
+    }
+    @media screen and (max-width: 1300px){
+        top: -133px;
+        left: 550px;
+        
+    }
+    @media screen and (max-width: 1150px){
+        top: -133px;
+        left: 450px;
+        
+    }
+    @media screen and (max-width: 1000px){
+        top: -725px;
+        left: 100px;
+        transform: translateX(100%);
+    }
+}
+
+.screen-reader-text{
+    display: none;
+}
+
 

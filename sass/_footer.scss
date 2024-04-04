@@ -4,3 +4,18 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+.liens > .menu-principal-container {
+    width: 100%;
+}
+
+.liens > .menu-principal-container > #menu-principal-1{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__section > #searchform{
+    transform: scale(1.3);
+    top: -10px;
+    left: 0vw;
+}

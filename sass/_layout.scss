@@ -318,3 +318,15 @@ blockquote p::first-letter{
         margin-left: 30px;
     }
 }
+
+#recherche__utilisateur{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#recherche__utilisateur h2{
+    position: relative;
+    left: -20vw;
+}

@@ -48,6 +48,7 @@
     padding: 10px;
     padding-top: 100px;
     padding-left: 70px;
+    padding-right: 250px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     height: 100vh;
     position: relative;
@@ -122,6 +123,10 @@
         &:hover{
             fill: var(--couleur-accent);
         }
+    }
+    &:checked ~ #searchform{
+        transform: translateX(0%);
+        transform: scale(0.3);
     }
 }
 

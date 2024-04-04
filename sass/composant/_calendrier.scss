@@ -81,7 +81,7 @@ ul {list-style-type: none;}
   margin-bottom: 15px;
   color: #777;
   transition: color 0.3s;
-    :hover{
+    &:hover{
         color: $--clr-bleu-fonce;
         transform: scale(1.2);
     }
@@ -90,7 +90,7 @@ ul {list-style-type: none;}
 .days li span {
     font-size: medium;
     transition: font-size 0.3s;
-    :hover{
+    &:hover{
         font-size: larger;
     }
 }
