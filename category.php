@@ -19,10 +19,10 @@
             </div>
         </section>
     </div>
+    <?php if($_nomCategori != "Populaire"){?>
     <div id="galerie" class="global ">
         <section class="galerie__section">
             <h2>Galerie</h2>
-            <!-- vouloir faire en sorte d'afficher un diaporama avec des images de la categorie active -->
             <?php if($_nomCategori == "Aventure"){?>
                 <div id="diaporama-aventure"></div>
             <?php } else if($_nomCategori == "Sport"){?>
@@ -40,6 +40,7 @@
             <?php }?>
         </section>
     </div>
+    <?php }?>
 
     <?php 
     // recuperer le fichier footer.php
