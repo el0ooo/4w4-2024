@@ -8,12 +8,14 @@
                         while(have_posts()): the_post();
                         // strpos();  --- permet de retier la duree du cours et autres                
                 ?>
+                        <?php the_post_thumbnail("large");?>
                         <h3><?php the_title(); ?></h3>
                         <p><?php the_content();?></p>
                     <?php endwhile;?>
                 <?php endif;?>
         </section>
     </div>
+    <?php if($_nomCategori != "Populaire"){?>
     <div id="galerie" class="global">
         <section class="galerie__section">
             <h2>Galerie</h2>
@@ -35,6 +37,7 @@
             <?php }?>
         </section>
     </div>
+    <?php }?>
     <div id="evenement" class="global">
         <section class="evenement__section">
             <h2>À faire</h2>
