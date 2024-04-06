@@ -68,4 +68,4 @@ La pagination globale « layout » du site et les différentes zones de la page:
 
 ## URL
 ### lien vers ma page github : https://el0ooo.github.io/4w4-2024/
-### lien vers le serveur distant WHC.ca : 
+### lien vers le serveur distant WHC.ca : https://gftnth00.mywhc.ca/tim35/
