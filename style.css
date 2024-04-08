@@ -399,6 +399,16 @@ body {
   margin-top: 40px;
 }
 
+.erreure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
 #entete {
   color: var(--couleur-entete);
   position: relative;
