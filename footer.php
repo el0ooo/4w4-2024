@@ -15,7 +15,7 @@
             </div>
             <div class="liens">
                 <?php wp_nav_menu(array(
-                    "menu"=> "principal",
+                    "menu"=> "footer",
                     "container" => "nav"));?>
             </div>
             <small>Créé par Yuri Eloi Chayer &copy;</small>
