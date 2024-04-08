@@ -864,6 +864,11 @@ header img:hover {
   margin-top: 25px;
 }
 
+.attachment-thumbnail {
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
 .carte {
   display: flex;
   flex-direction: column;

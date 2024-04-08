@@ -14,6 +14,7 @@
                         <div class="carte bck-primaire-100"> 
                            <h5><?php the_title(); ?></h5>
                             <p><?php echo wp_trim_words(get_the_content(), 10, "...");?></p>
+                            <?php the_post_thumbnail("thumbnail");?>
                             <p class="categori__carte"><?php the_category();?></p>
                             <p><a href= "<?php echo get_permalink()?>">Voir la suite</a></p>
                         </div>
