@@ -11,7 +11,6 @@
                         while(have_posts()): the_post();
                         // strpos();  --- permet de retier la duree du cours et autres                
                 ?>
-                        <?php the_post_thumbnail("large");?>
                         <h3><?php the_title(); ?></h3>
                         <p><?php the_content();?></p>
                     <?php endwhile;?>
