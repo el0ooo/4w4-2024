@@ -5,8 +5,8 @@
     <div class="erreure">
         <div class="information-erreur">
             <h1>Eurreur 404</h1>
-            <p>Vous essayez d'acceder à une page qui n'existe pas.</p>
-            <p>Pour revenir à la page d'accueil cliquer sur le lien suivant.</p>
+            <h5>Vous essayez d'acceder à une page qui n'existe pas.</h5>
+            <h5>Pour revenir à la page d'accueil cliquer sur le lien suivant.</h5>
             <button class="entete__button">
                 <a href="<?php echo get_home_url(); ?>">Accueil</a>
             </button>
