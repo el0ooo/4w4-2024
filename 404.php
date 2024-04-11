@@ -8,7 +8,7 @@
             <p>Vous essayez d'acceder à une page qui n'existe pas.</p>
             <p>Pour revenir à la page d'accueil cliquer sur le lien suivant.</p>
             <button class="entete__button">
-                <a href="<?php echo get_home_url(); ?>">Retour à la page d'accueil</a>
+                <a href="<?php echo get_home_url(); ?>">Accueil</a>
             </button>
             
             <div class="recherche-erreur"><?php get_search_form(); ?></div>

@@ -44,6 +44,7 @@ body {
     margin-top: 40px;
 }
 
+// 404
 .erreure{
     display: flex;
     flex-direction: column;
@@ -64,6 +65,17 @@ body {
 
 .information-erreur{
     width: 35vw;
+}
+
+.information-erreur .entete__button{
+    margin-left: 0px;
+}
+
+.information-erreur .liens {
+    width: fit-content;
+    position: relative;
+    width: 35vw;
+    left: -28vw;
 }
 
 #image-erreur{
@@ -88,12 +100,18 @@ body {
     transform: scale(0.5);
 }
 
+.recherche-erreur #searchform div input{
+    margin-left: 0px;
+}
+
+// entete
 #entete {
     //background-color: var(--couleur-arriere-entete);
     color: var(--couleur-entete);
     position: relative;
 }
 
+// aaccueil
 #accueil {
     //background-color: var(--couleur-arriere-acceuil);
     color: var(--couleur-acceuil);
@@ -101,7 +119,6 @@ body {
     padding-bottom: 6vh;
     padding-top: 60px;
 }
-
 
 .accueil__section h2 {
     margin: 0px;
@@ -131,6 +148,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
+// galerie
 #galerie{
     //background: linear-gradient(180deg, var(--couleur-arriere-acceuil), var(--couleur-arriere-evenement));
     color: var(--couleur-galerie);
@@ -305,6 +323,7 @@ body {
     }
 }
 
+// evenement
 #reservation{
     padding-bottom: 6vh;
     padding-top: 60px;
@@ -318,6 +337,7 @@ body {
     position: relative;
 }
 
+// footer
 #footer {
     //background-color: var(--couleur-arriere-footer);
     background-color: $--clr-bleu-fonce;
