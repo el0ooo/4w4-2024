@@ -14,51 +14,8 @@
     </div>
     <div class="erreure">
         <h3>Aucune information correspond à votre recherche.</h3>
-        <p>Veillez réessayer ou se fier aux informations plus bas.</p>
+        <p>Veillez réessayer</p>
     </div>
-    <div id="accueil" class="global clr-agencement-primaire">
-        <section class="accueil__section">
-            <h2>Destinations populaires</h2>
-            <div id="populaire" class="section__cours">
-                <?php if(have_posts()):
-                        while(have_posts()): the_post();      
-                ?>
-                        <div class="carte bck-primaire-100"> 
-                            <h5><?php the_title(); ?></h5>
-                            <p><?php echo wp_trim_words(get_the_content(), 10, "...");?></p>
-                            <p class="categori__carte"><?php the_category();?></p>
-                            <p><a href= "<?php echo get_permalink()?>">Voir la suite</a></p>
-                        </div>
-                    <?php endwhile;?>
-                <?php endif;?>
-            </div>
-            <h2>Catégories de voyage</h2>
-            <div id="categorie__section" class="section__cours">
-                <?php
-                    foreach(get_categories() as $category_id):
-                        $cat_nom = $category_id->name;
-                        $cat_description = wp_trim_words($category_id->description, 10, "...");
-                        $cat_lien = get_category_link($category_id->term_id);
-                ?>
-                    <div class="carte bck-primaire-100">
-                        <h5><?php echo $cat_nom;?></h5>
-                        <p><?php echo $cat_description;?></p>
-                        <p><?php echo $category_id->count;?> destinations a découvrir</p>
-                        <p><a href="<?php echo $cat_lien;?>">Voir la catégorie</a></p>
-                    </div>
-               <?php endforeach;?>
-            </div>
-        </section>
-    </div>
-    <div id="galerie" class="global">
-        <section class="galerie__section">
-            <h2>Galerie</h2>
-            <h4>Photos de voyage</h4>
-            <div id="<?php if($diapoAleatoire == 1):?>diaporama-pliene-nature<?php endif; ?><?php if($diapoAleatoire == 2):?>diaporama-sport<?php endif; ?><?php if($diapoAleatoire == 3):?>diaporama-aventure<?php endif; ?><?php if($diapoAleatoire == 4):?>diaporama-croisiere<?php endif; ?><?php if($diapoAleatoire == 5):?>diaporama-culture<?php endif; ?><?php if($diapoAleatoire == 6):?>diaporama-repos<?php endif; ?><?php if($diapoAleatoire == 7):?>diaporama-zen<?php endif; ?>">
-            </div>
-        </section>
-    </div>
-
     <?php 
     // recuperer le fichier footer.php
     get_footer();

@@ -3,9 +3,28 @@
 #### Groupe 2
 
 ## Description de l'Intra 1 : 
-Mon TP1 est un site internet pour un club de voyage possedant plusieurs categories comme sport et pleine nature. Dans ces catégories, ce trouve des destinations de voyage comme le Japon ou le Canada. Nous pouvons obtenir de l'information sur ces destinations pour nous motiver à voyager. Dans la section galerie, nous trouvons un caroussel d'image représentant une catégorie. Ce caroussel change d'image à chaque fois que nous arrivons sur le site. Le site a un style retro avec du grain et ses couleurs.
+Contenu  (10 points)
+-	Titre principal, sous-titre, texte et format général (3 points)
+-	Une image de la librairie média est intégrée dans le model, 
+cette image disparaît sur écran mobile (2 points)
+-	Formulaire de recherche fonctionnel reproduit comme sur la maquette  (3 points)
+-	La liste des catégories de destinations sous la forme de lien (2 points)
+Caractéristiques (5 points )
+-	La page s'adapte à différentes largeurs d'écran (3 points)
+-	La page reproduit fidèlement la maquette (2 points)
+Git (5 points)
+-	Création de 5 commits. Les commits devront être étalés sur l’ensemble de la durée de l’épreuve (3 heures)
+-	La branche « tp2 » contiendra tous les commits développés pour l’intra
+-	Chaque commit devra contenir un message décrivant l’étape qui a été réalisée
+-	La branche « tp2 » contiendra un readme.md avec les informations:
+-	Titre
+-	Auteur
+-	Courte description
+-	Lien vers votre site sur l’hébergeur « WHC »
+
 
 #### Objectifs de l'Intra 1 :
+Créer un modele pour la page erreur 404
 
 
 ## URL
