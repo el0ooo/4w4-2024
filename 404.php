@@ -2,19 +2,23 @@
     get_header();
     $diapoAleatoire = rand(1, 7);
 ?>
-    <div id="entete" class="global">
-        <section class="entete__header">
-            <h1 class ="bgc-text"><?php echo get_bloginfo('name')?></h1>
-            <h2 class ="bgc-text"><?php echo get_bloginfo('description')?></h2>
-            <h5 class ="bgc-text">TIM, Collège de Maisonneuve</h5>
-            <button class="entete__button">
-                <a href="https://www.larousse.fr/dictionnaires/francais/inscription/43287">Inscriptions</a>
-            </button>
-        </section>
-    </div>
     <div class="erreure">
-        <h3>Aucune information correspond à votre recherche.</h3>
-        <p>Veillez réessayer</p>
+        <div class="information-erreur">
+            <h1>Eurreur 404</h1>
+            <p>Vous essayez d'acceder à une page qui n'existe pas.</p>
+            <p>Pour revenir à la page d'accueil cliquer sur le lien suivant.</p>
+            <button class="entete__button">
+                <a href="<?php echo get_home_url(); ?>">Retour à la page d'accueil</a>
+            </button>
+            
+            <div class="recherche-erreur"><?php get_search_form(); ?></div>
+            <div class="liens">
+                    <?php wp_nav_menu(array(
+                        "menu"=> "footer",
+                        "container" => "nav"));?>
+            </div>
+        </div>
+        <div id="image-erreur"></div>
     </div>
     <?php 
     // recuperer le fichier footer.php
