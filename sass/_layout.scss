@@ -51,12 +51,13 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width : 90vw;
 
     @media screen and (min-width: 1000px){
         flex-direction: row;
         gap: 5vw;
         width: 80vw;
-        height: 60vh;
+        height: 80vh;
         margin: 0 auto;
         margin-top: 15vh;
         margin-bottom: 5vh;
@@ -64,7 +65,10 @@ body {
 }
 
 .information-erreur{
-    width: 35vw;
+    width: 80vw;
+    @media screen and (min-width: 1000px){
+        width: 35vw;
+    }
 }
 
 .information-erreur .entete__button{
@@ -92,6 +96,7 @@ body {
     top: 0px;
     left: 0px;
     transform: scale(0.5);
+    z-index: 1;
 }
 
 .recherche-erreur #searchform div input{
