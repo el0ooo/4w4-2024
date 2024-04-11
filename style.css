@@ -405,32 +405,31 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 90vw;
 }
 @media screen and (min-width: 1000px) {
   .erreure {
     flex-direction: row;
     gap: 5vw;
     width: 80vw;
-    height: 60vh;
+    height: 80vh;
     margin: 0 auto;
-    margin-top: 15vh;
-    margin-bottom: 5vh;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
   }
 }
 
 .information-erreur {
-  width: 35vw;
+  width: 80vw;
+}
+@media screen and (min-width: 1000px) {
+  .information-erreur {
+    width: 35vw;
+  }
 }
 
 .information-erreur .entete__button {
   margin-left: 0px;
-}
-
-.information-erreur .liens {
-  width: fit-content;
-  position: relative;
-  width: 35vw;
-  left: -28vw;
 }
 
 #image-erreur {
@@ -455,6 +454,7 @@ body {
   top: 0px;
   left: 0px;
   transform: scale(0.5);
+  z-index: 1;
 }
 
 .recherche-erreur #searchform div input {
@@ -843,12 +843,22 @@ header img:hover {
   }
 }
 
-.liens > .menu-principal-container > #menu-principal-1 {
+.liens > .menu-footer-container > #menu-footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-left: 0px;
+}
+
+.liens > .menu-footer-container > #menu-footer-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0px;
 }
 
 .footer__section > #searchform {
@@ -933,7 +943,6 @@ header img:hover {
   word-wrap: break-word;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   border-radius: 15px;
-  cursor: url("images/curseur.png") 0 0, pointer;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .carte:hover {
