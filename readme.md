@@ -28,5 +28,6 @@ Créer un modele pour la page erreur 404
 
 
 ## URL
-### lien vers ma page github : https://el0ooo.github.io/4w4-2024/
 ### lien vers le serveur distant WHC.ca : https://gftnth00.mywhc.ca/tim35/
+### lien vers la page 404 du serveur distant WHC.ca : https://gftnth00.mywhc.ca/tim35/asdasd
+### lien vers ma page github : https://el0ooo.github.io/4w4-2024/
