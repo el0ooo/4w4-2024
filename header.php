@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css';?>">
     <!-- <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css"> -->
+
+    <?php wp_head();?>
 </head>
 <body class="clr-agencement-primaire">
     <div id="menu">
