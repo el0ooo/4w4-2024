@@ -13,33 +13,14 @@
                 ?>
                         <h3><?php the_title(); ?></h3>
                         <p><?php the_content();?></p>
+                        <p>Température minimun :<?php the_field("temperature_minimum");?></p>
+                        <p>Température maximum :<?php the_field("temoerature_maximum");?></p>
+                        <p>Ville avoisinante :<?php the_field("villes_avoisinantes");?></p>
+                        <p>Appréciation :<?php the_field("appreciation");?></p>
                     <?php endwhile;?>
                 <?php endif;?>
         </section>
     </div>
-    <?php if($_nomCategori != "Populaire"|| $_nomCategori != "voyage en famille" || $_nomCategori != "Voyage en groupe" || $_nomCategori != "voyage solo"){?>
-    <div id="galerie" class="global">
-        <section class="galerie__section">
-            <h2>Galerie</h2>
-            <h4><?php echo $_nomCategori; ?></h4>
-            <?php if($_nomCategori == "Aventure"){?>
-                <div id="diaporama-aventure"></div>
-            <?php } else if($_nomCategori == "Sport"){?>
-                <div id="diaporama-sport"></div>
-            <?php } else if($_nomCategori == "Pleine nature"){?>
-                <div id="diaporama-pliene-nature"></div>
-            <?php } else if($_nomCategori == "croisière"){?>
-                <div id="diaporama-croisiere"></div>
-            <?php } else if($_nomCategori == "Culturel"){?>
-                <div id="diaporama-culture"></div>
-            <?php } else if($_nomCategori == "Repos"){?>
-                <div id="diaporama-repos"></div>
-            <?php } else if($_nomCategori == "Zen"){?>
-                <div id="diaporama-zen"></div>
-            <?php }?>
-        </section>
-    </div>
-    <?php }?>
     <div id="evenement" class="global">
         <section class="evenement__section">
             <h2>À faire</h2>

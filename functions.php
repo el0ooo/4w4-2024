@@ -19,4 +19,3 @@ function cidweb_modifie_requete_principal( $query ) {
      }
      add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
      add_theme_support('post-thumbnails');
-?>

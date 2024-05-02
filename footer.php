@@ -21,5 +21,6 @@
             <small>Créé par Yuri Eloi Chayer &copy;</small>
     </section>
 </div>
+<?php wp_footer();?>
 </body>
 </html>
