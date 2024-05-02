@@ -13,10 +13,12 @@
                 ?>
                         <h3><?php the_title(); ?></h3>
                         <p><?php the_content();?></p>
-                        <p>Température minimun :<?php the_field("temperature_minimum");?></p>
-                        <p>Température maximum :<?php the_field("temoerature_maximum");?></p>
-                        <p>Ville avoisinante :<?php the_field("villes_avoisinantes");?></p>
-                        <p>Appréciation :<?php the_field("appreciation");?></p>
+                        <div class="infoSupp">
+                            <p>Température minimun :<?php the_field("temperature_minimum");?></p>
+                            <p>Température maximum :<?php the_field("temperature_maximum");?></p>
+                            <p>Ville avoisinante :<?php the_field("ville_avoisinante");?></p>
+                            <p>Humidité :<?php the_field("humidite");?></p>
+                        </div>
                     <?php endwhile;?>
                 <?php endif;?>
         </section>
