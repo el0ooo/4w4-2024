@@ -1073,13 +1073,13 @@ header img:hover {
 
 #populaire > div.carte:nth-of-type(4) {
   background-image: url("images/frontPage/fuji.jpg");
-  background-size: 170%;
+  background-size: 180%;
   background-position: center;
 }
 
 #populaire > div.carte:nth-of-type(5) {
   background-image: url("images/frontPage/whislter.jpg");
-  background-size: 110%;
+  background-size: 120%;
   background-position: center;
 }
 
