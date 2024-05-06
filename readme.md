@@ -31,7 +31,7 @@ Exemple de champs personnalisée :
 -	Appréciation (1 à 5 avec *)
 
 Filtres d’extraction
-Dans la page d’accueil des filtres dynamique permettent d’obtenir un résultat directement sans avoir à actualiser la page globalement. Il s’agit ici d’utiliser la REST API de Wordpress)
+Dans la page d’accueil des filtres dynamique permettent d’obtenir un résultat directement sans avoir à actualiser la page globalement. Il s’agit ici d’utiliser la REST API de Wordpress
 
 Animations
 -	Améliorer l’interactivité et l’utilisabilité
