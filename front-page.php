@@ -50,6 +50,12 @@
     <div id="galerie" class="global">
         <section class="galerie__section">
             <h2>Galerie</h2>
+
+            <?php
+// Appel du shortcode directement dans le fichier front-page.php
+echo do_shortcode('[em_destination]');
+?>
+
             <h4>Photos de voyage</h4>
             <div id="<?php if($diapoAleatoire == 1):?>diaporama-pliene-nature<?php endif; ?><?php if($diapoAleatoire == 2):?>diaporama-sport<?php endif; ?><?php if($diapoAleatoire == 3):?>diaporama-aventure<?php endif; ?><?php if($diapoAleatoire == 4):?>diaporama-croisiere<?php endif; ?><?php if($diapoAleatoire == 5):?>diaporama-culture<?php endif; ?><?php if($diapoAleatoire == 6):?>diaporama-repos<?php endif; ?><?php if($diapoAleatoire == 7):?>diaporama-zen<?php endif; ?>">
             </div>
