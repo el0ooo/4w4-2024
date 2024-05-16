@@ -19,9 +19,6 @@
                 <?php if(have_posts()):
                         while(have_posts()): the_post();      
                         $maCategorie = "carte";
-                        if(in_category("galerie")){
-                            $maCategorie = "galerie";
-                        }
                         get_template_part('gabarit/categorie', $maCategorie);
                 ?>
                     <?php endwhile;?>
@@ -31,9 +28,11 @@
             <div id="categorie__section" class="section__cours">
                 <?php
                     foreach(get_categories() as $category_id):
+                        if($category_id->name != "galerie" ):
                         $cat_nom = $category_id->name;
                         $cat_description = wp_trim_words($category_id->description, 10, "...");
                         $cat_lien = get_category_link($category_id->term_id);
+                        
                 ?>
                     <div class="carte bck-primaire-100">
                         <h5><?php echo $cat_nom;?></h5>
@@ -41,6 +40,7 @@
                         <p><?php echo $category_id->count;?> destinations a découvrir</p>
                         <p><a href="<?php echo $cat_lien;?>">Voir la catégorie</a></p>
                     </div>
+                    <?php endif;?>
                <?php endforeach;?>
             </div>
         </section>
@@ -55,6 +55,13 @@ echo do_shortcode('[em_destination]');
 ?>
 
             <h4>Photos de voyage</h4>
+            <?php if(have_posts()):
+                        while(have_posts()): the_post();      
+                        $maCategorie = "galerie";
+                        get_template_part('gabarit/categorie', $maCategorie);
+                ?>
+                    <?php endwhile;?>
+                <?php endif;?>
             <div id="<?php if($diapoAleatoire == 1):?>diaporama-pliene-nature<?php endif; ?><?php if($diapoAleatoire == 2):?>diaporama-sport<?php endif; ?><?php if($diapoAleatoire == 3):?>diaporama-aventure<?php endif; ?><?php if($diapoAleatoire == 4):?>diaporama-croisiere<?php endif; ?><?php if($diapoAleatoire == 5):?>diaporama-culture<?php endif; ?><?php if($diapoAleatoire == 6):?>diaporama-repos<?php endif; ?><?php if($diapoAleatoire == 7):?>diaporama-zen<?php endif; ?>">
             </div>
         </section>
