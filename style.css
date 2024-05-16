@@ -1237,6 +1237,7 @@ header img:hover {
   transform: skew(-10deg);
   padding: var(--padding);
   border-radius: 15px;
+  padding-left: 4vw;
 }
 
 ul {
@@ -1245,7 +1246,7 @@ ul {
 
 /* Month header */
 .month {
-  padding: 70px 25px;
+  padding: 70px 0px;
   width: 100%;
   background: hsl(220, 100%, 15%);
   text-align: center;
