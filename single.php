@@ -13,7 +13,7 @@
                 ?>
                         <h3><?php the_title(); ?></h3>
                         <p><?php the_content();?></p>
-                            <div class="infoSupp">
+                            <div id="infoSupp">
                                 <p>Température minimun :<?php the_field("temperature_minimum");?></p>
                                 <p>Température maximum :<?php the_field("temperature_maximum");?></p>
                                 <p>Ville avoisinante :<?php the_field("ville_avoisinante");?></p>
