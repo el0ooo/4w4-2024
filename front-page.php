@@ -17,10 +17,12 @@
             <h2>Destinations populaires</h2>
             <div id="populaire" class="section__cours">
                 <?php if(have_posts()):
-                        while(have_posts()): the_post();      
-                        $maCategorie = "carte";
-                        get_template_part('gabarit/categorie', $maCategorie);
+                        while(have_posts()): the_post();  
+                            if(get_the_category()[0]->name != "Galerie"):  
+                            $maCategorie = "carte";
+                            get_template_part('gabarit/categorie', $maCategorie);
                 ?>
+                        <?php endif;?>
                     <?php endwhile;?>
                 <?php endif;?>
             </div>
@@ -28,7 +30,7 @@
             <div id="categorie__section" class="section__cours">
                 <?php
                     foreach(get_categories() as $category_id):
-                        if($category_id->name != "galerie" ):
+                        if($category_id->name != "Galerie" ):
                         $cat_nom = $category_id->name;
                         $cat_description = wp_trim_words($category_id->description, 10, "...");
                         $cat_lien = get_category_link($category_id->term_id);
@@ -56,10 +58,12 @@ echo do_shortcode('[em_destination]');
 
             <h4>Photos de voyage</h4>
             <?php if(have_posts()):
-                        while(have_posts()): the_post();      
+                    while(have_posts()): the_post();
+                        if(get_the_category()[0]->name == "Galerie"):        
                         $maCategorie = "galerie";
                         get_template_part('gabarit/categorie', $maCategorie);
                 ?>
+                        <?php endif;?>
                     <?php endwhile;?>
                 <?php endif;?>
             <div id="<?php if($diapoAleatoire == 1):?>diaporama-pliene-nature<?php endif; ?><?php if($diapoAleatoire == 2):?>diaporama-sport<?php endif; ?><?php if($diapoAleatoire == 3):?>diaporama-aventure<?php endif; ?><?php if($diapoAleatoire == 4):?>diaporama-croisiere<?php endif; ?><?php if($diapoAleatoire == 5):?>diaporama-culture<?php endif; ?><?php if($diapoAleatoire == 6):?>diaporama-repos<?php endif; ?><?php if($diapoAleatoire == 7):?>diaporama-zen<?php endif; ?>">
