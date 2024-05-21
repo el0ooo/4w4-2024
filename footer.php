@@ -18,6 +18,8 @@
                     "menu"=> "footer",
                     "container" => "nav"));?>
             </div>
+            <h5>TP2 - 4W4</h5>
+            <p>Travail pratique réalisé pour insité des personnes à voyager à travers le monde.</p>
             <small>Créé par Yuri Eloi Chayer &copy;</small>
     </section>
 </div>
