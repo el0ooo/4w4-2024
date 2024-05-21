@@ -1116,7 +1116,7 @@ header img:hover {
   left: 0px;
   top: 10px;
   width: 100vw;
-  height: 100vh;
+  height: 10vh;
   padding: 0px;
   margin: 0;
   z-index: 10001;
@@ -1190,6 +1190,7 @@ header img:hover {
 .entete__menu {
   position: relative;
   top: 0px;
+  height: 10vh;
 }
 @media screen and (min-width: 1000px) {
   .entete__menu {
