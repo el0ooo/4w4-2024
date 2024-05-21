@@ -493,7 +493,7 @@ body {
   color: var(--couleur-acceuil);
 }
 
-.infoSupp {
+#infoSupp {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1237,7 +1237,7 @@ header img:hover {
   transform: skew(-10deg);
   padding: var(--padding);
   border-radius: 15px;
-  padding-left: 4vw;
+  margin-left: 3vw;
 }
 
 ul {

@@ -4,6 +4,7 @@
     transform: skew(-10deg);
     padding: var(--padding);
     border-radius: 15px;
+    margin-left: 3vw;
 }
 
 
@@ -12,7 +13,7 @@ ul {list-style-type: none;}
 
 /* Month header */
 .month {
-  padding: 70px 25px;
+  padding: 70px 0px;
   width: 100%;
   background: $--clr-bleu-fonce;
   text-align: center;
