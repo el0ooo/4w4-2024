@@ -19,3 +19,12 @@ function cidweb_modifie_requete_principal( $query ) {
      }
      add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
      add_theme_support('post-thumbnails');
+
+/**
+ * Ajoute un style personnalisé à la page d'administration
+ */
+function enqueue_custom_script() {
+  wp_enqueue_script('custom-script', get_template_directory_uri() . '/js/arrierePlan.js', array('jquery'), null, true);
+  }
+  add_action('wp_enqueue_scripts', 'enqueue_custom_script');
+  

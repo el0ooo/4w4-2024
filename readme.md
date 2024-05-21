@@ -36,6 +36,7 @@ Dans la page d’accueil des filtres dynamique permettent d’obtenir un résult
 Animations
 -	Améliorer l’interactivité et l’utilisabilité
 -	Les animations sont simples et efficaces
+
 Nouveaux gabarits
 -	Gabarit pour le formulaire de recherche
 -	Pour la création des cartes
@@ -47,6 +48,7 @@ Chaque section sera évaluée sur
 -	L’intégration (niveau d’adaptabilité)
 -	Fonctionnement
 -	La codification générale
+
 1.	Section Entête  (3 points)
 header.php
 -	Logo
@@ -62,6 +64,7 @@ front-page.php
 -	Logo site sociaux
 -	Boutons vers annonces destinations spéciales
 -	Animations
+
 3.	L’accueil (3 points)
 front-page.php
 -	Section Filtre REST API
@@ -69,6 +72,7 @@ front-page.php
 -	Section Populaire
 -	Galerie d’image avec carrousel
 -	Animations
+
 4.	Le pied de page (3 points)
 footer.php
 -	Liens
@@ -81,6 +85,7 @@ o	Adresse github branche tp2
 o	Adresse de la Github-page
 o	Description du tp2
 o	image
+
 5.	Une destination de voyage (3 points)
 single.php
 -	Une seule destination à la fois
@@ -88,11 +93,13 @@ single.php
 -	Description
 -	Champs personnalisés
 -	Galerie d’images avec carrousel pour les destinations populaires
+
 6.	Liste des destination d’une catégorie (3 points)
 category.php
 -	Titre de la catégorie
 -	Plusieurs destinations sous forme de cartes
 -	Les cartes sont animées
+
 7.	Gigthub (2 points)
 -	Dépôt du thème (20 commits répartie ) début 15 avril
 -	Dépôt du carrousel (20 commits) début 15 avril

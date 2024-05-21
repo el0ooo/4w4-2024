@@ -367,7 +367,7 @@ body {
   left: 0;
   opacity: 0.3;
   background: linear-gradient(to right, var(--couleur-arriere-entete), var(--couleur-arriere-footer)), url(https://grainy-gradients.vercel.app/noise.svg);
-  z-index: 1000;
+  z-index: 1000000000;
   pointer-events: none;
 }
 @media screen and (max-width: 800px) {
@@ -465,6 +465,8 @@ body {
 #entete {
   color: var(--couleur-entete);
   position: relative;
+  z-index: 10000;
+  background: none;
 }
 
 #accueil {
@@ -472,6 +474,12 @@ body {
   height: fit-content;
   padding-bottom: 6vh;
   padding-top: 60px;
+  z-index: 10000;
+  background: none;
+}
+
+.accueil__section {
+  z-index: 10;
 }
 
 .accueil__section h2 {
@@ -527,7 +535,8 @@ body {
 #galerie {
   color: var(--couleur-galerie);
   position: relative;
-  z-index: 1;
+  z-index: 10000;
+  background: none;
 }
 
 .galerie__section h4 ul {
@@ -719,6 +728,7 @@ body {
 #footer {
   background-color: hsl(220, 100%, 15%);
   color: var(--couleur-accent);
+  z-index: 10000;
 }
 
 .footer__section h2 {
@@ -1337,6 +1347,84 @@ ul {
   border-radius: 15px;
 }
 
+.bouncing-blob {
+  width: 32vw;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  will-change: transform;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  transform-origin: left top;
+}
+
+.bouncing-blob--blue {
+  background: #4783c7;
+}
+
+.bouncing-blob--white {
+  background: #ffffff;
+  z-index: 2;
+  width: 15vw;
+}
+
+.bouncing-blob--purple {
+  background: #7300ff;
+}
+
+.bouncing-blob--pink {
+  background: #e289cd;
+}
+
+.bouncing-blobs-container {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bouncing-blobs-glass {
+  position: absolute;
+  z-index: 1002;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(140px);
+  -webkit-backdrop-filter: blur(140px);
+  pointer-events: none;
+}
+
+.bouncing-blobs {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .bouncing-blobs-glass {
+    backdrop-filter: blur(120px);
+    -webkit-backdrop-filter: blur(120px);
+  }
+}
+@media (max-width: 500px) {
+  .bouncing-blob {
+    width: 60vw;
+  }
+  .bouncing-blob--white {
+    width: 30vw;
+  }
+  .bouncing-blobs-glass {
+    backdrop-filter: blur(90px);
+    -webkit-backdrop-filter: blur(90px);
+  }
+}
 /* ----------------------------------------------------- */
 /*Effets*/
 /* ----------------------------------------------------- */

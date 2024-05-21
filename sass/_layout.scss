@@ -13,7 +13,7 @@ body {
     left: 0;
     opacity: 0.3;
     background: linear-gradient(to right, var(--couleur-arriere-entete), var(--couleur-arriere-footer)), url(https://grainy-gradients.vercel.app/noise.svg);
-    z-index: 1000;
+    z-index: 1000000000;
     pointer-events: none;
     @media screen and (max-width: 800px){
         pointer-events: none;
@@ -109,6 +109,8 @@ body {
     //background-color: var(--couleur-arriere-entete);
     color: var(--couleur-entete);
     position: relative;
+    z-index: 10000;
+    background: none;
 }
 
 // aaccueil
@@ -118,6 +120,12 @@ body {
     height: fit-content;
     padding-bottom: 6vh;
     padding-top: 60px;
+    z-index: 10000;
+    background: none;
+}
+
+.accueil__section{
+    z-index: 10;
 }
 
 .accueil__section h2 {
@@ -177,7 +185,8 @@ body {
     //background: linear-gradient(180deg, var(--couleur-arriere-acceuil), var(--couleur-arriere-evenement));
     color: var(--couleur-galerie);
     position: relative;
-    z-index: 1;
+    z-index: 10000;
+    background: none;
 }
 
 .galerie__section h4 ul{
@@ -366,6 +375,7 @@ body {
     //background-color: var(--couleur-arriere-footer);
     background-color: $--clr-bleu-fonce;
     color: var(--couleur-accent);
+    z-index: 10000;
 }
 
 .footer__section h2{
