@@ -463,6 +463,21 @@ body {
   margin-left: 0px;
 }
 
+.site__main {
+  width: 85vw;
+  margin: 0 auto;
+  padding-top: 7vh;
+}
+
+figure.wp-block-image {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.wp-image-112 {
+  border-radius: 15px;
+}
+
 #entete {
   color: var(--couleur-entete);
   position: relative;
@@ -1224,7 +1239,7 @@ header img:hover {
   top: 2%;
   display: block;
   transform: scale(2);
-  z-index: 1000;
+  z-index: 1000000;
 }
 @media screen and (min-width: 1000px) {
   #burger {

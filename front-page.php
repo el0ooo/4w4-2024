@@ -20,7 +20,7 @@
             <h2 class ="bgc-text"><?php echo get_bloginfo('description')?></h2>
             <h5 class ="bgc-text">TIM, Collège de Maisonneuve</h5>
             <button class="entete__button">
-                <a href="https://www.larousse.fr/dictionnaires/francais/inscription/43287">Inscriptions</a>
+                <a href="http://localhost/4w4-yec-2024/conference/">Événement Hebdomadaire</a>
             </button>
         </section>
     </div>

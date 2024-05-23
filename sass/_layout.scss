@@ -105,6 +105,22 @@ body {
     margin-left: 0px;
 }
 
+//templete page
+.site__main{
+    width: 85vw;
+    margin: 0 auto;
+    padding-top: 7vh;
+}
+
+figure.wp-block-image{
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.wp-image-112{
+    border-radius: 15px;
+}
+
 // entete
 #entete {
     //background-color: var(--couleur-arriere-entete);
