@@ -6,6 +6,18 @@
     }
 
 ?>
+<div class="bouncing-blobs-container">
+        <div class="bouncing-blobs-glass"></div>
+            <div class="bouncing-blobs">
+                <div class="bouncing-blob bouncing-blob--blue"></div>
+                <div class="bouncing-blob bouncing-blob--blue"></div>
+                <div class="bouncing-blob bouncing-blob--blue"></div>
+                <div class="bouncing-blob bouncing-blob--white"></div>
+                <div class="bouncing-blob bouncing-blob--purple"></div>
+                <div class="bouncing-blob bouncing-blob--purple"></div>
+                <div class="bouncing-blob bouncing-blob--pink"></div>
+            </div>
+    </div>
     <div id="entete" class="global">
         <section class="entete__header">
             <h1 class ="bgc-text"><?php echo get_bloginfo('name')?></h1>

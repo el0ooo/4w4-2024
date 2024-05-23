@@ -2,6 +2,18 @@
     get_header();
     $diapoAleatoire = rand(1, 7);
 ?>
+<div class="bouncing-blobs-container">
+        <div class="bouncing-blobs-glass"></div>
+            <div class="bouncing-blobs">
+                <div class="bouncing-blob bouncing-blob--blue"></div>
+                <div class="bouncing-blob bouncing-blob--blue"></div>
+                <div class="bouncing-blob bouncing-blob--blue"></div>
+                <div class="bouncing-blob bouncing-blob--white"></div>
+                <div class="bouncing-blob bouncing-blob--purple"></div>
+                <div class="bouncing-blob bouncing-blob--purple"></div>
+                <div class="bouncing-blob bouncing-blob--pink"></div>
+            </div>
+    </div>
     <div class="erreure">
         <div class="information-erreur">
             <h1>Eurreur 404</h1>

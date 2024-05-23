@@ -406,6 +406,7 @@ body {
   align-items: center;
   text-align: center;
   width: 90vw;
+  z-index: 10000;
 }
 @media screen and (min-width: 1000px) {
   .erreure {
@@ -718,11 +719,20 @@ body {
   padding-top: 60px;
   margin-left: 35px;
   width: 90vw;
+  z-index: 10000;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 #evenement {
+  background-color: var(--couleur-arriere-evenement);
+  border-radius: 15px;
+  width: 85vw;
   color: var(--couleur-evenement);
   position: relative;
+  z-index: 10000;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 #footer {
@@ -983,6 +993,16 @@ header img:hover {
   transform: skew(0deg) scale(1.2);
   box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
   color: var(--couleur-accent);
+}
+.carte:hover h5 {
+  mix-blend-mode: normal;
+  color: var(--couleur-footer);
+}
+
+.carte h5 {
+  mix-blend-mode: difference;
+  color: white;
+  transition: color 0.3s ease-in-out, mix-blend-mode 0.3s ease-in-out;
 }
 
 .post-categories {

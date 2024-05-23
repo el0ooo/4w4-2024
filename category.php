@@ -5,6 +5,18 @@
         $_nomCategori = $category->name;
     }
 ?>
+<div class="bouncing-blobs-container">
+        <div class="bouncing-blobs-glass"></div>
+            <div class="bouncing-blobs">
+                <div class="bouncing-blob bouncing-blob--blue"></div>
+                <div class="bouncing-blob bouncing-blob--blue"></div>
+                <div class="bouncing-blob bouncing-blob--blue"></div>
+                <div class="bouncing-blob bouncing-blob--white"></div>
+                <div class="bouncing-blob bouncing-blob--purple"></div>
+                <div class="bouncing-blob bouncing-blob--purple"></div>
+                <div class="bouncing-blob bouncing-blob--pink"></div>
+            </div>
+    </div>
     <div id="accueil" class="global">
         <section class="accueil__section">
             <h2><?php echo $_nomCategori;?></h2>

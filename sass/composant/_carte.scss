@@ -35,6 +35,18 @@
         box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
         color: var(--couleur-accent);
     }
+
+    &:hover h5{
+        mix-blend-mode: normal;
+        color: var(--couleur-footer);
+    }
+}
+
+.carte h5{
+    mix-blend-mode: difference;
+    color: white;
+    transition: color 0.3s ease-in-out, mix-blend-mode 0.3s ease-in-out;
+    
 }
 
 .post-categories{
