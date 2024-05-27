@@ -1,0 +1,137 @@
+// <nav class="menu-principal-container">
+//  <ul id="menu-principal" class="menu"><li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-38"><a href="http://localhost/4w4-yec-2024/2020/10/07/description-du-cours-582-1m1-creation-video/">Création vidéo</a></li>
+//      <li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-40"><a href="http://localhost/4w4-yec-2024/2020/10/07/582-2m3-effets-speciaux-et-animation-60h/">Effets spéciaux et animation</a></li>
+//      <li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-41"><a href="http://localhost/4w4-yec-2024/2020/10/07/582-3m5imagerie-3d-75h/">Imagerie 3D</a></li>
+//      <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-42"><a href="http://localhost/4w4-yec-2024/2020/10/07/582-4mb-animation-3d-75h/">Animation 3D</a></li>
+//      <li id="menu-item-43" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43"><a href="http://*accueil">Accueil</a></li>
+//      <li id="menu-item-44" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44"><a href="http://*galerie">Galerie</a></li>
+//      <li id="menu-item-45" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45"><a href="http://*evenement">Événements</a></li>
+//  </ul>
+// </nav>
+#menu{
+    position: fixed;
+    left: 0px;
+    top: 10px;
+    width: 100vw;
+    height: 10vh;
+    padding: 0px;
+    margin: 0;
+    z-index: 10001;
+    @media  screen and (min-width: 1000px){
+        height: fit-content;
+        top: 10;
+        bottom: 90;
+    }
+
+}
+
+.menu-principal-container{ //nav
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(100%);
+    @media  screen and (min-width: 1000px){
+        height: fit-content;
+        transform: translateX(0%);
+    }
+}
+
+
+#menu-principal{ //ul
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    //background-color: var(--couleur-arriere-footer);
+    background-color: $--clr-bleu-fonce;
+    margin: 0;
+    padding: 10px;
+    padding-top: 100px;
+    padding-left: 70px;
+    padding-right: 250px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    height: 100vh;
+    position: relative;
+    top:-70px;
+    @media  screen and (min-width: 1000px){
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: fit-content;
+    }
+}
+
+.menu-item{ //li
+    transform: skew(-10deg) scale(1);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover{
+        transform: skew(-10deg) scale(1.2);
+    }
+}
+
+.menu-item a{ //a
+    text-decoration: none;
+    color: var(--couleur-accent);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+
+    &:hover{
+        color: var(--couleur-arriere-acceuil);
+    }
+}
+
+.entete__menu{
+    position: relative;
+    top: 0px;
+    @media  screen and (min-width: 1000px){
+        top: -61px;
+    }
+    height: 10vh;
+}
+
+#burger{
+    position: absolute;
+    left: 90%;
+    top: 2%;
+    display: block;
+    transform: scale(2);
+    z-index: 1000000;
+    @media  screen and (min-width: 1000px){
+        display: none;
+    }
+}
+
+#burger > svg > path{
+    fill: var(--couleur-accent);
+    transition: fill 0.3s ease-in-out;
+    padding: 2px;
+    &:hover{
+        fill: var(--couleur-accent);
+    }
+}
+
+#chk_burger{
+    display: none;
+    &:checked + #burger > svg {
+        transform: rotate(180deg);
+    }
+
+    &:checked + #burger > svg > path{
+        fill: var(--couleur-arriere-entete);
+        &:hover{
+            fill: var(--couleur-accent);
+        }
+    }
+    &:checked ~ #searchform{
+        transform: translateX(0%);
+        transform: scale(0.3);
+    }
+}
+
+#chk_burger:checked ~ .menu-principal-container{
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in-out;
+}

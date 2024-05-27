@@ -1,0 +1,21 @@
+.recherche{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.recherche__input{
+    display: block;
+    color: var(--couleur-footer);
+}
+
+.recherche__button{
+    margin-left: 0px;
+}
+
+.recherche__input::placeholder{
+    color: var(--couleur-accent);
+    transition: color 0.2s;
+}
+
+

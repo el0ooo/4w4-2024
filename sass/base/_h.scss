@@ -1,0 +1,85 @@
+/*
+Selecteurs textuels de base
+*/
+h1 {
+    font-size: clamp(1rem, -1.917rem + 14vw, 3.333rem);
+    text-shadow: 2px 2px var(--couleur-accent);
+}
+
+h2 {
+    font-size: clamp(0.667rem, -2.146rem + 13.5vw, 2.917rem);
+    text-shadow: 2px 2px var(--couleur-accent);
+}
+
+h3 {
+    font-size: clamp(0.667rem, -1.625rem + 11vw, 2.5rem);
+    padding: var(--padding);
+    margin: 0;
+}
+
+h4 {
+    font-size: clamp(0.667rem, -1.104rem + 8.5vw, 2.083rem);
+    padding: var(--padding);
+    margin: 0;
+}
+
+h5 {
+    font-size: clamp(0.667rem, -0.583rem + 6vw, 1.667rem);
+    padding: var(--padding);
+    margin: 0;
+}
+
+h6 {
+    font-size: clamp(0.667rem, -0.063rem + 3.5vw, 1.25rem);
+    padding: var(--padding);
+    margin: 0;
+}
+
+p {
+    font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+    font-family: 'Bebas Neue', sans-serif;
+    padding: var(--padding);
+    margin: 0;
+}
+
+hr {
+    height: 5px;
+    border: none;
+    background-color: var(--couleur-arriere-footer);
+    fill: var(--couleur-arriere-footer);
+    margin-top: 3vh;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+
+a{
+    font-size: clamp(1.5625rem, 1.9643rem + -0.7143vw, 1.875rem);
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    color: var(--couleur-footer);
+    transition: color 0.2s;
+    width: fit-content;
+
+    &:hover, &:focus{
+        color: var(--couleur-accent);
+    }
+    
+    &:active{
+        color: var(--couleur-arriere-footer);
+    }
+
+    &:visited{
+        color: var(--couleur-entete);
+    }
+}
+
+details {
+    padding: var(--padding);
+}
+
+meter{
+    margin-left: var(--padding);
+}
+

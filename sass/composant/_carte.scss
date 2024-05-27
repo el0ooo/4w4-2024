@@ -1,0 +1,179 @@
+.section__cours{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 3vw;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.attachment-thumbnail{
+	margin: 0 auto;
+	border-radius: 15px;
+}
+
+.carte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 1 calc(1010px/4);
+    //background-color: var(--couleur-arriere-footer);
+    max-width: 20vw;
+    min-width: 15vw;
+    margin-left: 5px;
+    transform: skew(-10deg) scale(1);
+    word-wrap: break-word;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;    
+
+    &:hover{
+        transform: skew(0deg) scale(1.2);
+        box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
+        color: var(--couleur-accent);
+    }
+
+    &:hover h5{
+        mix-blend-mode: normal;
+        color: var(--couleur-footer);
+    }
+}
+
+.carte h5{
+    mix-blend-mode: difference;
+    color: white;
+    transition: color 0.3s ease-in-out, mix-blend-mode 0.3s ease-in-out;
+    
+}
+
+.post-categories{
+    list-style-type: none;
+    margin: 0;
+}
+
+.post-categories li::marker{
+    display: none;
+}
+
+.post-categories li a{
+    font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+    font-family: 'Bebas Neue', sans-serif;
+    &:hover{
+        color: var(--couleur-accent);
+    }
+}
+
+/*pour les cateagories*/
+#categorie__section > div.carte:nth-of-type(1){
+    background-image: url("images/frontPage/nuitEtoile.jpg");
+    background-size: 110%;
+    background-position: center;
+}
+
+#categorie__section > div.carte:nth-of-type(2){
+    background-image: url("images/frontPage/bateauCroisiere.jpg");
+    background-size: 110%;
+    background-position: center;
+}
+
+#categorie__section > div.carte:nth-of-type(3){
+    background-image: url("images/frontPage/satuesCulture.jpg");
+    background-size: 110%;
+    background-position: center;
+}
+
+#categorie__section > div.carte:nth-of-type(4){
+    background-image: url("images/frontPage/montagneAventure.jpg");
+    background-size: 110%;
+    background-position: center;
+}
+
+#categorie__section > div.carte:nth-of-type(5){
+    background-image: url("images/frontPage/populaire.jpg");
+    background-size: 90%;
+    background-position: center;
+}
+
+#categorie__section > div.carte:nth-of-type(6){
+    background-image: url("images/frontPage/montagneRepos.jpg");
+    background-size: 110%;
+    background-position: center;
+}
+
+#categorie__section > div.carte:nth-of-type(7){
+    background-image: url("images/frontPage/surfSpor.jpg");
+    background-size: 200%;
+    background-position: center;
+}
+
+#categorie__section > div.carte:nth-of-type(8){
+    background-image: url("images/frontPage/famille.jpg");
+    background-size: 110%;
+    background-position: center;
+}
+
+#categorie__section > div.carte:nth-of-type(9){
+    background-image: url("images/frontPage/groupe.jpg");
+    background-size: 110%;
+    background-position: center;
+}
+
+#categorie__section > div.carte:nth-of-type(10){
+    background-image: url("images/frontPage/solo.jpg");
+    background-size: 110%;
+    background-position: center;
+}
+
+#categorie__section > div.carte:nth-of-type(11){
+    background-image: url("images/frontPage/tourZen.jpg");
+    background-size: 110%;
+    background-position: center;
+}
+
+/*pour les destinations populaire*/
+#populaire > div.carte:nth-of-type(1){
+    background-image: url("images/frontPage/banff.jpg");
+    background-size: 140%;
+    background-position: center;
+}
+
+#populaire > div.carte:nth-of-type(2){
+    background-image: url("images/frontPage/costaRica.jpg");
+    background-size: 140%;
+    background-position: center;
+}
+
+#populaire > div.carte:nth-of-type(3){
+    background-image: url("images/frontPage/kyoto.jpg");
+    background-size: 300%;
+    background-position: right;
+}
+
+#populaire > div.carte:nth-of-type(4){
+    background-image: url("images/frontPage/fuji.jpg");
+    background-size: 180%;
+    background-position: center;
+}
+
+#populaire > div.carte:nth-of-type(5){
+    background-image: url("images/frontPage/whislter.jpg");
+    background-size: 120%;
+    background-position: center;
+}
+
+@media screen and (max-width: 1000px){
+    .section__cours{
+        gap: 5vw;
+        margin-right: 5vw;
+        justify-content: center;
+    }
+
+    .carte{
+        min-width: 200px;
+        margin-left: 0px;
+    }
+}
+
